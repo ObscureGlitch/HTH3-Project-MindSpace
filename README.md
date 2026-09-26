@@ -1,6 +1,6 @@
-# The Last Watch
+## MindSpace
 
-Technical foundation for a short first-person forest-ranger horror game. Milestone 2 intentionally contains no environment, story, puzzle, scare, voice-service, or biometric-service implementation.
+A therapeutic game where the player can interact with an AI chatbot who will navigate the player through their emotions help them overcome whatever it is that they're going through. The player can also interact with their environment and explore their surroundings.
 
 ## Open the project
 
