@@ -1,0 +1,70 @@
+{
+  "url": "http://127.0.0.1:8765/preview/?steps=120",
+  "measuredFor": 2,
+  "backend": "webgpu",
+  "rendererFound": true,
+  "discoveredVia": "window.__scene",
+  "samples": 24,
+  "fpsMean": 27.2,
+  "fpsP50": 59.9,
+  "frameMs": {
+    "n": 24,
+    "mean": 36.83,
+    "p50": 16.69,
+    "p95": 17.11,
+    "max": 500
+  },
+  "mainThreadMs": {
+    "n": 24,
+    "mean": 0.56,
+    "p50": 0.46,
+    "p95": 1.08,
+    "max": 1.18
+  },
+  "budgetUsedPct": 3.4,
+  "vsyncCapped": false,
+  "canvas": {
+    "w": 1024,
+    "h": 640
+  },
+  "jsHeapMB": 42,
+  "draw": {
+    "reliable": false,
+    "drawCalls": 3,
+    "triangles": 0,
+    "points": 0,
+    "lines": 0,
+    "geometries": 67,
+    "textures": 5,
+    "programs": null
+  },
+  "audit": {
+    "available": true,
+    "via": "window.__scene",
+    "objects": 90,
+    "findings": [],
+    "errors": 0,
+    "warnings": 0
+  },
+  "consoleErrors": [
+    "THREE.THREE.WebGPURenderer: WebGPU Device Lost:\n\nMessage: A valid external Instance reference no longer exists.\nReason: unknown"
+  ],
+  "consoleWarnings": [],
+  "exceptions": [
+    "OperationError: Instance dropped in popErrorScope",
+    "OperationError: Instance dropped in popErrorScope",
+    "OperationError: Instance dropped in popErrorScope",
+    "OperationError: Instance dropped in popErrorScope",
+    "OperationError: Instance dropped in popErrorScope",
+    "OperationError: Instance dropped in popErrorScope",
+    "OperationError: Instance dropped in popErrorScope",
+    "OperationError: Instance dropped in popErrorScope"
+  ],
+  "failedRequests": [],
+  "screenshot": "D:\\Hack the Hill\\Deliverables\\OutdoorGarden\\verification\\overview.png",
+  "screenshotsExtra": [
+    "D:\\Hack the Hill\\Deliverables\\OutdoorGarden\\verification\\overview-a1.png",
+    "D:\\Hack the Hill\\Deliverables\\OutdoorGarden\\verification\\overview-a2.png"
+  ],
+  "ok": false
+}

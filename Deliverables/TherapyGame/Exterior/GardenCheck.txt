@@ -1,0 +1,6 @@
+Refined Three.js garden installed 2026-09-26T15:18:00
+53 mesh batches; 13 small animated butterflies; 150 box colliders.
+Shallow walk-in pond, lily-pad frog, natural trail stones, and real front window.
+PASS edit-mode physics: pond depth <= 0.48 m; gentle south-bank capsule clearance; 13 butterflies face their flight tangents. Live walking/visual check still pending.
+Original indoor scene backed up; window backdrop disabled, not deleted.
+No rendering, Play mode, or baking started by this import.

@@ -1,0 +1,6 @@
+TherapyRoom validation
+Meshes: 525
+Triangles (including landscape): 171642
+Interaction targets: 7
+Real-time shadow lights: 1
+PASS: structure, materials, interactions, lighting budget, entry and grounding route.

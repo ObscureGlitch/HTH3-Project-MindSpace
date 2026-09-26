@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d423f5cf4e6d242be7bfec21c69b9c, type: 3}
+  m_Name: VoiceCompanions
+  m_EditorClassIdentifier: TherapyGame.Runtime::TheLastWatch.Integrations.WellnessVoiceSettings
+  agents:
+  - displayName: "Companion 1 \xB7 Yellow"
+    agentId: agent_8001m3e67fv6fazsz8h90paz1xtv
+    colorVariable: yellow
+  - displayName: "Companion 2 \xB7 Red"
+    agentId: agent_4301m3e7t5qfffkb26yn6gwydg03
+    colorVariable: red
+  connectionTimeoutSeconds: 15
+  maximumSessionSeconds: 600

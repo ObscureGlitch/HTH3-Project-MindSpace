@@ -1,0 +1,12 @@
+Materials replaced: 510
+Rounded meshes refined: 30
+2K material maps, 4096 shadow atlas, 4x MSAA, 115% render scale.
+Warm daylight/practicals; first-person-only exponential-squared haze 0.032.
+Saved current scene including existing edits; pre-upgrade snapshot preserved.
+Baking 24 texels/metre, 2048 atlas cap, 128 indirect samples, 3 bounces.
+Bake completed: 2 lightmaps. Missing scripts: 0. Interaction targets: 7.
+PASS: generated full-resolution previews and saved upgraded scene.
+Visual polish: neutral bounce fill, restrained amber key, lighter sage knit, 29 planar wood caps.
+Bake completed: 2 lightmaps. Missing scripts: 0. Interaction targets: 7.
+PASS: generated full-resolution previews and saved upgraded scene.
+Final detail check: visible knit scale; matched 2560x1440 haze A/B mean channel change 1.821/255, maximum 46/255. Camera fog restored outside rendering. Missing materials/scripts: 0; interaction targets: 7.

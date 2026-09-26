@@ -1,0 +1,2 @@
+System.Exception: WASD input did not move the player.
+  at TheLastWatch.Editor.WellnessPlayCheck.Tick () [0x000f6] in D:\Hack the Hill\Assets\_Project\Scripts\Editor\WellnessPlayCheck.cs:72 

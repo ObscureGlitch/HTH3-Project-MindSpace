@@ -1,0 +1,9 @@
+Latest seating smoke check: 2026-09-26T11:20:37
+5 sitting spots; 4 furniture pieces; original 7 reflection interactions retained.
+PASS Sofa · left cushion: aimed E selection, correct eye height, seated mouse look, WASD locked, Esc/Enter cursor, stand-up and walking restored.
+PASS Sofa · right cushion: aimed E selection, correct eye height, seated mouse look, WASD locked, Esc/Enter cursor, stand-up and walking restored.
+PASS Left conversation chair: aimed E selection, correct eye height, seated mouse look, WASD locked, Esc/Enter cursor, stand-up and walking restored.
+PASS Right conversation chair: aimed E selection, correct eye height, seated mouse look, WASD locked, Esc/Enter cursor, stand-up and walking restored.
+PASS Window reflection chair: aimed E selection, correct eye height, seated mouse look, WASD locked, Esc/Enter cursor, stand-up and walking restored.
+PASS: all five spots; invalid/repeated sit rejected; obstructed exits rejected; no therapy runtime errors.
+Returned to Edit mode; input settings and original player pose restored.

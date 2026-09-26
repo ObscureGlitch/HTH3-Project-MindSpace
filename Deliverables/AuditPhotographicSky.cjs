@@ -1,0 +1,48 @@
+// Read-only scene/reference audit. Does not render or enter Play mode.
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root='D:/Unity/HTH3 Project/Assets/TherapyGame';
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const parse=t=>[...t.matchAll(/^--- !u!(\d+) &(-?\d+)\r?\n([\s\S]*?)(?=^--- !u!|$(?![\s\S]))/gm)].map(m=>({type:+m[1],id:m[2],text:m[3]}));
+const scalar=(t,k)=>t?.match(new RegExp('^  '+k+': (.*)$','m'))?.[1].trim();
+const ref=(t,k)=>scalar(t,k)?.match(/fileID: (\d+)/)?.[1];
+const guid=p=>read(p+'.meta').match(/guid: (\w+)/)[1];
+const docs=parse(read('Scenes/TherapyRoom.unity')),before=parse(read('Weather/Backups/TherapyRoom_BeforePhotographicSky.unity'));
+const byID=new Map(docs.map(d=>[d.id,d]));
+const scripts=n=>docs.filter(d=>d.type===114&&d.text.includes('guid: '+guid('Runtime/'+n+'.cs')));
+const objects=docs.filter(d=>d.type===1),deck=scripts('WellnessCloudDeck')[0],cycle=scripts('WellnessSkyCycle')[0];
+const checks=[];const check=(name,ok,detail)=>checks.push({name,ok:!!ok,...(detail===undefined?{}:{detail})});
+check('One photographic deck linked to existing cycle',scripts('WellnessCloudDeck').length===1&&ref(cycle?.text,'cloudDeck')===deck?.id);
+check('Existing camera drives distant cloud projection',byID.get(ref(deck?.text,'viewer'))?.type===20);
+check('Old mesh animator list is empty',scalar(cycle?.text,'clouds')==='[]');
+const oldClouds=objects.filter(d=>/^Drifting cloud \d\d$/.test(scalar(d.text,'m_Name')));
+check('All 16 original solid cloud objects retained disabled',oldClouds.length===16&&oldClouds.every(d=>scalar(d.text,'m_IsActive')==='0'));
+// Unity quotes names containing the middle-dot separator when serializing YAML.
+const newClouds=objects.filter(d=>/^"?Photographic cloud \d\d/.test(scalar(d.text,'m_Name'))),cloudIDs=new Set(newClouds.map(d=>d.id));
+const parts=docs.filter(d=>cloudIDs.has(ref(d.text,'m_GameObject'))),renderers=parts.filter(d=>d.type===23),filters=parts.filter(d=>d.type===33);
+check('16 active photographic cloud layers',newClouds.length===16&&newClouds.every(d=>scalar(d.text,'m_IsActive')==='1'));
+check('No extra colliders, lights or cameras',!parts.some(d=>[64,65,135,136,108,20].includes(d.type)));
+check('Cloud shadows and probe sampling disabled',renderers.length===16&&renderers.every(d=>scalar(d.text,'m_CastShadows')==='0'&&scalar(d.text,'m_ReceiveShadows')==='0'&&scalar(d.text,'m_LightProbeUsage')==='0'&&scalar(d.text,'m_ReflectionProbeUsage')==='0'));
+check('One shared photographic material and atlas',renderers.every(d=>d.text.includes('guid: '+guid('Weather/Materials/PhotographicCloud.mat')))&&read('Weather/Materials/PhotographicCloud.mat').includes('guid: '+guid('Weather/Textures/PhotographicCloudAtlas.png')));
+let allMeshes=true;for(let i=0;i<16;i++){const p='Weather/Meshes/CloudCard_'+i%8+(i>=8?'_mirrored':'')+'.asset';allMeshes&&=/indexCount: 6/.test(read(p))&&filters.some(d=>d.text.includes('guid: '+guid(p)));}
+check('Eight shapes plus mirrored variants: 32 triangles total',allMeshes&&filters.length===16);
+const tiles=[...deck.text.matchAll(/atlasTile: (\d+)/g)].map(m=>+m[1]);
+const positions=[...deck.text.matchAll(/virtualPosition: \{x: ([^,]+), y: ([^,]+), z: ([^}]+)\}/g)].map(m=>({x:+m[1],y:+m[2],z:+m[3]}));
+const speeds=[...deck.text.matchAll(/speedFactor: ([\d.]+)/g)].map(m=>+m[1]);
+const sizes=[...deck.text.matchAll(/sizeMetres: (.*)/g)].map(m=>m[1].trim());
+const wind=+scalar(deck.text,'windMetresPerSecond');
+check('Eight source shapes and 16 unique aspect/size combinations',tiles.length===16&&new Set(tiles).size===8&&new Set(sizes).size===16);
+const fastest=Math.max(...positions.map((p,i)=>wind*speeds[i]/p.y*180/Math.PI));
+check('Calm physical drift saved below 0.10 degrees/s',wind===2.4&&positions.length===16&&positions.every(p=>p.y>=1500&&p.y<=2100)&&fastest<.1,{windMetresPerSecond:wind,maximumDegreesPerSecond:fastest});
+check('Natural sky and star shader assigned',cycle.text.includes('guid: '+guid('Weather/Materials/NaturalSky.mat'))&&read('Weather/Materials/NaturalSky.mat').includes('guid: '+guid('Weather/Shaders/NaturalSky.shader')));
+const meta=read('Weather/Textures/PhotographicCloudAtlas.png.meta');
+check('Atlas alpha, mipmaps and 2048 cap retained',/alphaIsTransparency: 1/.test(meta)&&/enableMipMap: 1/.test(meta)&&/maxTextureSize: 2048/.test(meta)&&/isReadable: 0/.test(meta));
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+check('Live atlas matches generated project asset',hash(path.join(root,'Weather/Textures/PhotographicCloudAtlas.png'))===hash('D:/Hack the Hill/Deliverables/TherapyGame/Weather/Textures/PhotographicCloudAtlas.png'));
+check('Existing lights and baked scene settings unchanged',before.filter(d=>[104,108,157].includes(d.type)).every(d=>byID.get(d.id)?.text===d.text));
+const oldCloudIDs=new Set(oldClouds.map(d=>d.id));
+const changes=before.filter(d=>d.type!==4&&d.id!==cycle.id&&!oldCloudIDs.has(d.id)&&byID.get(d.id)?.text!==d.text);
+check('Other existing non-transform scene objects preserved',changes.length===0,{unexpectedChangedIDs:changes.map(d=>d.id)});
+check('Weather, rain and voice link still intact',ref(scripts('WellnessVoiceChat')[0].text,'skyCycle')===cycle.id&&ref(cycle.text,'rain')===scripts('WellnessRain')[0].id);
+check('One-use refinement gate completed',read('SkyRefinementRequest.txt').trim()==='installed-live-visual-check-pending');
+check('CPU/import checks passed',read('Weather/SkyRefinementCheck.txt').includes('PASS: 2.4 m/s wind'));
+const result={ok:checks.every(c=>c.ok),method:'CPU-only saved-scene audit; no live rendered or performance verification',checks};console.log(JSON.stringify(result,null,2));if(!result.ok)process.exitCode=1;

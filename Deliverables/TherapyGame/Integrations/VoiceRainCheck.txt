@@ -1,0 +1,4 @@
+Voice and rain installed 2026-09-26T15:52:05
+PASS: two repository agent configurations, explicit consent/start UI, native startup cancellation, input blocking, rain references and 600-particle cap.
+PASS: indoor/outdoor blend and roof-exclusion/lifetime checks. Existing room validation passed.
+No microphone, ElevenLabs session, Play mode, rendering test, or bake was started. Live voice and visual verification pending.

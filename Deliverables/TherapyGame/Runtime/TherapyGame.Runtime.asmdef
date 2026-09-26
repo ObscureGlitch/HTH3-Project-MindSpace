@@ -1,0 +1,6 @@
+{
+  "name": "TherapyGame.Runtime",
+  "rootNamespace": "TheLastWatch",
+  "references": ["Unity.InputSystem", "ElevenLabs.Agents.Core"],
+  "autoReferenced": true
+}

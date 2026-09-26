@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "errors": [],
+  "meshBatches": 53,
+  "triangles": 76673,
+  "boxColliders": 150,
+  "butterflies": 13,
+  "units": "metres"
+}

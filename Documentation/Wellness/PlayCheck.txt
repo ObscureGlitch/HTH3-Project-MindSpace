@@ -1,0 +1,1 @@
+PASS: Play mode started; real WASD input moved the player; floor supported the controller; wall collision stopped movement; breathing orb animated; no runtime errors during the check.

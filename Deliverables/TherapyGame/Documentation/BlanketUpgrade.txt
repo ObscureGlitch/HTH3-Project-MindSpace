@@ -1,0 +1,11 @@
+Sofa blanket upgrade: PASS
+Original surface triangles: 31736
+New mesh vertices: 16478
+New mesh triangles including thickness and curved fringe: 31736
+Grid: 48 x 140
+Width: 0.74 m; thickness: 0.006 m
+Back, seat and front-edge fitted drape; uneven hanging folds; curved fringe.
+Minimum furniture surface clearance: 0.0024 m
+Scene: Left unsaved to preserve the user's existing unsaved edits. Save when ready.
+Original scene backup: Assets/TherapyGame/Documentation/TherapyRoom.before-blanket.unity.backup
+No runtime cloth simulation, no other furniture or project settings changed.

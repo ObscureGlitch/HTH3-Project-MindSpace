@@ -1,0 +1,59 @@
+{
+  "url": "http://127.0.0.1:8765/preview/?webgl&steps=120",
+  "measuredFor": 2,
+  "backend": "webgl2-fallback",
+  "rendererFound": true,
+  "discoveredVia": "window.__scene",
+  "samples": 100,
+  "fpsMean": 58.3,
+  "fpsP50": 60,
+  "frameMs": {
+    "n": 100,
+    "mean": 17.16,
+    "p50": 16.67,
+    "p95": 16.98,
+    "max": 33.33
+  },
+  "mainThreadMs": {
+    "n": 100,
+    "mean": 3.77,
+    "p50": 3.04,
+    "p95": 7.07,
+    "max": 8.41
+  },
+  "budgetUsedPct": 22.6,
+  "vsyncCapped": true,
+  "canvas": {
+    "w": 1024,
+    "h": 640
+  },
+  "jsHeapMB": 35.2,
+  "draw": {
+    "reliable": false,
+    "drawCalls": 294,
+    "triangles": 149500,
+    "points": 0,
+    "lines": 0,
+    "geometries": 67,
+    "textures": 5,
+    "programs": null
+  },
+  "audit": {
+    "available": true,
+    "via": "window.__scene",
+    "objects": 90,
+    "findings": [],
+    "errors": 0,
+    "warnings": 0
+  },
+  "consoleErrors": [],
+  "consoleWarnings": [],
+  "exceptions": [],
+  "failedRequests": [],
+  "screenshot": "D:\\Hack the Hill\\Deliverables\\OutdoorGarden\\verification\\webgl.png",
+  "screenshotsExtra": [
+    "D:\\Hack the Hill\\Deliverables\\OutdoorGarden\\verification\\webgl-a1.png",
+    "D:\\Hack the Hill\\Deliverables\\OutdoorGarden\\verification\\webgl-a2.png"
+  ],
+  "ok": true
+}

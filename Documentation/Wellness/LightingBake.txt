@@ -1,0 +1,1 @@
+Bake completed. Lightmaps: 1; light probes: 45. Room reflection uses a subtle custom environment cubemap.

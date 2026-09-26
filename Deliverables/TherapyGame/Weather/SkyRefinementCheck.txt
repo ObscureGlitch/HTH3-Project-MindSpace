@@ -1,0 +1,5 @@
+Photographic sky installed 2026-09-26T17:34:15
+PASS: eight alpha cloud shapes across 16 varied layers, 32 rendered triangles, old solid clouds retained disabled, compressed mipmapped atlas <= 2048.
+PASS: 2.4 m/s wind independent of game-hour speed; 1500-2100 m virtual height, drift/advance/projection/wrap checks; existing day/weather math.
+PASS: camera, cycle, cloud/sky shader/material, voice/rain references. Stars vary in size, placement and color, fade after twilight, and dim in cloud cover.
+No Play mode, microphone, GPU preview, reflection capture, GI refresh or bake started. Live appearance/performance still unverified.

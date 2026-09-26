@@ -6,7 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    path: Assets/_Project/Scenes/Bootstrap.unity
+    guid: 00f3733fa38ad694d9a82138078063dc
+  - enabled: 1
+    path: Assets/_Project/Scenes/MainMenu.unity
+    guid: f1d6bd98f9858c545b1c21b30c1b7baf
+  - enabled: 1
+    path: Assets/_Project/Scenes/RangerLookout.unity
+    guid: 0e8c72f9bf6214848a25303a4edd2000
+  - enabled: 1
+    path: Assets/_Project/Scenes/DevelopmentSandbox.unity
+    guid: 2b0122b254b8f07499addee848028d8a
+  - enabled: 1
+    path: Assets/_Project/Scenes/TherapyRoom.unity
+    guid: 3ee0018eb0b1ccb47bea81d2cc308aeb
+  m_configObjects: {}

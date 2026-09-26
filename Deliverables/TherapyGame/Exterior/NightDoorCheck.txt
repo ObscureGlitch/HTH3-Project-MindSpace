@@ -1,0 +1,6 @@
+Night and door fixes installed 2026-09-26T17:49:59
+PASS: zero indoor haze; outdoor/night fog color shared; smooth doorway transition.
+PASS: pond shader imports; crossing brightness lattice removed; per-pixel fog, filtered shadows and shadow-distance fade.
+PASS: door references; E prompt; closed leaf blocks rays from both sides; open leaf clears doorway; swing/player safety math.
+PASS: five seat spots, existing pond collider setup and weather references retained.
+No Play mode, microphone, GPU preview, reflection capture or bake started. Visual appearance and real-time interaction require user testing.

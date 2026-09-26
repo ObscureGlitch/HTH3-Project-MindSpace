@@ -1,0 +1,7 @@
+TherapyRoom import verification
+Missing scripts: 0
+Missing materials: 0
+Explorer: True
+Scene pipeline: True
+Interaction targets: 7
+PASS. Imported and opened in this project.

@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "HTH3 Project.slnx"
+    "dotnet.defaultSolution": "Hack the Hill.slnx"
 }
