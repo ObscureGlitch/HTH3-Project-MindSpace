@@ -1,0 +1,5 @@
+PASS: daytime growth, smooth evening dissipation, 30/120 FPS agreement, pause, calm real-seconds wind, exactly one puffy card, no hidden-card ghosts and restoring other families.
+PASS: 576000 CPU scheduling checks over four hours; 51 switches, type visits 15 / 19 / 18.
+PASS: every atlas switch occurred at exactly zero opacity after full fade-out; all three families used, no repeated adjacent family, no overlap.
+PASS: 18-second fade-out, one-second clear gap, 18-second fade-in; 3-5 minute holds, pause/invalid/stalled time, exact 32/64 FPS agreement.
+PASS: all 25 Auto/Off/manual setting transitions, immediate paused selection, manual lock, fade interruption, Off, and return to Auto. Rain/night settings are not dependencies of cloud events.

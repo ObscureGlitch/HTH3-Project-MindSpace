@@ -1,0 +1,3 @@
+System.Exception: Night-sky shader import has errors or is incomplete: NaturalSky
+  at TherapyGame.Editor.TherapyNightSkyUpgrade.Install () [0x002d7] in D:\Unity\HTH3 Project\Assets\TherapyGame\Editor\TherapyNightSkyUpgrade.cs:57 
+  at TherapyGame.Editor.TherapyNightSkyUpgrade.Once () [0x00098] in D:\Unity\HTH3 Project\Assets\TherapyGame\Editor\TherapyNightSkyUpgrade.cs:25 

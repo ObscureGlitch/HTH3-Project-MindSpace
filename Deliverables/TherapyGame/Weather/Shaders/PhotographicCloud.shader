@@ -6,6 +6,7 @@ Shader "Therapy Game/Photographic Cloud"
         _Tint ("Weather illumination", Color) = (1,.98,.95,1)
         _HorizonColor ("Atmospheric haze", Color) = (.69,.80,.89,1)
         _Opacity ("Density", Range(0,1)) = 1
+        [HideInInspector] _SingleBank ("Single distant cumulus bank",Float) = 0
     }
     SubShader
     {
@@ -20,13 +21,14 @@ Shader "Therapy Game/Photographic Cloud"
             #pragma vertex Vert
             #pragma fragment Frag
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "WellnessCloudOcclusion.hlsl"
             TEXTURE2D(_BaseMap);SAMPLER(sampler_BaseMap);
             CBUFFER_START(UnityPerMaterial)
                 half4 _Tint, _HorizonColor;
-                half _Opacity;
+                half _Opacity,_SingleBank;
             CBUFFER_END
             struct Attributes {float4 positionOS:POSITION;float2 uv:TEXCOORD0;float2 localUV:TEXCOORD1;};
-            struct Varyings {float4 positionCS:SV_POSITION;float2 uv:TEXCOORD0;float2 localUV:TEXCOORD1;half horizon:TEXCOORD2;};
+            struct Varyings {float4 positionCS:SV_POSITION;float2 uv:TEXCOORD0;float2 localUV:TEXCOORD1;half horizon:TEXCOORD2;float3 direction:TEXCOORD3;};
             Varyings Vert(Attributes v)
             {
                 Varyings o;float3 world=TransformObjectToWorld(v.positionOS.xyz);
@@ -40,6 +42,7 @@ Shader "Therapy Game/Photographic Cloud"
                 #endif
                 o.uv=v.uv;o.localUV=v.localUV;
                 o.horizon=1-smoothstep(.05,.5,normalize(world-_WorldSpaceCameraPos).y);
+                o.direction=world-_WorldSpaceCameraPos;
                 return o;
             }
             half4 Frag(Varyings i):SV_Target
@@ -50,7 +53,8 @@ Shader "Therapy Game/Photographic Cloud"
                 half3 color=lerp(detail*_Tint.rgb,_HorizonColor.rgb,i.horizon*.48);
                 float2 border=min(i.localUV,1-i.localUV);
                 half padding=smoothstep(0,.045,min(border.x,border.y));
-                return half4(color,photo.a*_Opacity*padding);
+                half visible=_SingleBank>.5?WellnessCloudSkyVisibility(normalize(i.direction)):1;
+                return half4(color,photo.a*_Opacity*padding*visible);
             }
             ENDHLSL
         }

@@ -15,9 +15,11 @@ MonoBehaviour:
   agents:
   - displayName: "Companion 1 \xB7 Yellow"
     agentId: agent_8001m3e67fv6fazsz8h90paz1xtv
+    llmModel: gemini-3.1-pro-preview
     colorVariable: yellow
   - displayName: "Companion 2 \xB7 Red"
     agentId: agent_4301m3e7t5qfffkb26yn6gwydg03
+    llmModel: gemini-3.1-pro-preview
     colorVariable: red
   connectionTimeoutSeconds: 15
   maximumSessionSeconds: 600

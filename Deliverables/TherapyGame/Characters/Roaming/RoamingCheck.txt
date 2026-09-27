@@ -1,0 +1,18 @@
+Roaming companions installed 2026-09-27T05:57:18
+Destination: (-2.43, -0.06, -7.00); complete indoor-to-garden path, 9 corners.
+Destination: (-7.00, -1.14, -13.00); complete indoor-to-garden path, 10 corners.
+Destination: (-7.00, -0.16, 6.00); complete indoor-to-garden path, 11 corners.
+Destination: (1.00, 0.86, 10.00); complete indoor-to-garden path, 13 corners.
+Destination: (9.01, -0.48, 9.94); complete indoor-to-garden path, 16 corners.
+Destination: (24.00, -0.36, 10.00); complete indoor-to-garden path, 17 corners.
+Destination: (27.00, 0.22, -1.00); complete indoor-to-garden path, 17 corners.
+Destination: (26.00, -0.24, -14.00); complete indoor-to-garden path, 12 corners.
+Destination: (15.00, -0.09, -16.00); complete indoor-to-garden path, 12 corners.
+Destination: (5.00, -0.02, -15.00); complete indoor-to-garden path, 10 corners.
+Destination: (3.00, -0.09, -7.00); complete indoor-to-garden path, 11 corners.
+PASS: 110 complete directed paths between 11 destinations; indoor doorway and all map quadrants connected.
+PASS: navigation excludes the pond and keeps paths inside the fenced playable area.
+PASS: two independently roaming companions, two NavMeshAgents, two movement controllers, one shared baked navigation asset.
+PASS: Follow / Stay / Explore, approach pause, follow distance hysteresis, door opening/capsule protection, actual-speed Walk animation and moving spatial voice configured.
+PASS: voice still requires session consent and an explicit conversation request; movement controls also work with voice off.
+Pathfinding and behavior checks ran in Edit mode. No microphone, remote session, Play mode or render capture was started.

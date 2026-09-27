@@ -1,0 +1,14 @@
+{
+  "name": "mindspace-presage-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local SmartSpectra camera sidecar for the MindSpace Unity experience.",
+  "scripts": {
+    "check": "node --check bridge.mjs",
+    "self-test": "node bridge.mjs --self-test"
+  },
+  "dependencies": {
+    "@smartspectra/node-sdk": "3.3.0"
+  }
+}

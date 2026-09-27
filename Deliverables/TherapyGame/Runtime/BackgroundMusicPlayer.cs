@@ -115,6 +115,14 @@ namespace TheLastWatch.Audio
         public int TrackCount => _tracks!=null?_tracks.Length:0;
         public int TrackNumber => _source!=null&&_tracks!=null?Array.IndexOf(_tracks,_source.clip)+1:0;
         public string TrackTitle => _source!=null&&_source.clip!=null?CleanTitle(_source.clip.name):"Quiet room";
+        public string TrackArtist => _source!=null&&_source.clip!=null?CreatorCredit(_source.clip.name):"";
+        // These uploader handles are preserved from the seven supplied filenames; no invented artists.
+        public static string CreatorCredit(string filename)
+        {
+            foreach(string creator in new[]{"alex-morgan","andriig-soft","andriih-soft","apalonbeats"})
+                if(filename.StartsWith(creator+"-",StringComparison.OrdinalIgnoreCase))return creator;
+            return "Artist not supplied";
+        }
         public float Volume {get=>volume;set{volume=Mathf.Clamp01(value);if(_source!=null)_source.volume=volume;}}
         public void TogglePause()
         {

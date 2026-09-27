@@ -1,0 +1,1 @@
+PASS: 16576 CPU apron checks; 224 exact edge samples, 5376 upward triangles, 4 material batches, 285.2m minimum outer-edge clearance.

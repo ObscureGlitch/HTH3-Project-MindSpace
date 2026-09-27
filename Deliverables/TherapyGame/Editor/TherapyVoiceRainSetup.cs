@@ -62,11 +62,14 @@ namespace TherapyGame.Editor
                 config=ScriptableObject.CreateInstance<WellnessVoiceSettings>();config.name="VoiceCompanions";
                 // Public IDs from Hackathon26's two committed TalkingBoxAgentConfig assets.
                 config.agents=new[]{
-                    new WellnessVoiceSettings.Agent{displayName="Companion 1 · Yellow",agentId="agent_8001m3e67fv6fazsz8h90paz1xtv",colorVariable="yellow"},
-                    new WellnessVoiceSettings.Agent{displayName="Companion 2 · Red",agentId="agent_4301m3e7t5qfffkb26yn6gwydg03",colorVariable="red"}
+                    new WellnessVoiceSettings.Agent{displayName="Companion 1 · Yellow",agentId="agent_8001m3e67fv6fazsz8h90paz1xtv",llmModel="gemini-3.1-pro-preview",colorVariable="yellow"},
+                    new WellnessVoiceSettings.Agent{displayName="Companion 2 · Red",agentId="agent_4301m3e7t5qfffkb26yn6gwydg03",llmModel="gemini-3.1-pro-preview",colorVariable="red"}
                 };
                 AssetDatabase.CreateAsset(config,configPath);
             }
+            foreach(var agent in config.agents??Array.Empty<WellnessVoiceSettings.Agent>())
+                if(agent!=null&&string.IsNullOrWhiteSpace(agent.llmModel))agent.llmModel="gemini-3.1-pro-preview";
+            EditorUtility.SetDirty(config);
             Transform old=room.Find("Voice and Rain");if(old!=null)Undo.DestroyObjectImmediate(old.gameObject);
             var root=new GameObject("Voice and Rain");root.transform.SetParent(room,false);Undo.RegisterCreatedObjectUndo(root,"Install voice companions and gentle rain");
             var weather=root.AddComponent<WellnessRain>();weather.player=player;
@@ -81,12 +84,12 @@ namespace TherapyGame.Editor
             var chat=root.AddComponent<WellnessVoiceChat>();chat.settings=config;chat.player=player;chat.rain=weather;chat.voiceAudio=voiceSource;
             Verify(room,chat,weather);
             TherapyGameTools.ValidateImportedRoom();AssetDatabase.SaveAssets();EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);
-            File.WriteAllText(Report,"Voice and rain installed "+DateTime.Now.ToString("s")+"\nPASS: two repository agent configurations, explicit consent/start UI, native startup cancellation, input blocking, rain references and 600-particle cap.\nPASS: indoor/outdoor blend and roof-exclusion/lifetime checks. Existing room validation passed.\nNo microphone, ElevenLabs session, Play mode, rendering test, or bake was started. Live voice and visual verification pending.\n");
+            File.WriteAllText(Report,"Voice and rain installed "+DateTime.Now.ToString("s")+"\nPASS: two repository agent configurations request Gemini 3.1 Pro Preview with safe fallback, explicit consent/start UI, native startup cancellation, input blocking, rain references and 600-particle cap.\nPASS: indoor/outdoor blend and roof-exclusion/lifetime checks. Existing room validation passed.\nNo microphone, ElevenLabs session, Play mode, rendering test, or bake was started. Live voice and visual verification pending.\n");
             File.WriteAllText(Request,"installed-live-verification-pending");Debug.Log("THERAPY_VOICE_RAIN_IMPORTED: no microphone or conversation started.");
         }
         private static void Verify(Transform room,WellnessVoiceChat chat,WellnessRain rain)
         {
-            if(chat.settings==null||chat.settings.agents.Length!=2||chat.settings.agents.Any(a=>string.IsNullOrWhiteSpace(a.agentId)))throw new Exception("Missing voice configurations.");
+            if(chat.settings==null||chat.settings.agents.Length!=2||chat.settings.agents.Any(a=>a==null||string.IsNullOrWhiteSpace(a.agentId)||a.llmModel!="gemini-3.1-pro-preview"))throw new Exception("Missing voice or Gemini model configurations.");
             if(chat.IsConnected||chat.IsPanelOpen||chat.IsBusy)throw new Exception("Voice must remain idle on import.");
             if(chat.voiceAudio==null||chat.voiceAudio.playOnAwake||rain.rainAudio==null||rain.rainAudio.clip==null)throw new Exception("Audio references are incomplete.");
             if(rain.drops.main.maxParticles>600||rain.drops.main.playOnAwake||rain.drops.collision.enabled)throw new Exception("Rain particle budget was exceeded.");

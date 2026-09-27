@@ -1,0 +1,1 @@
+PASS: 2332800 finite nonnegative sky samples, 19523 pink/violet upper-curtain pixels, 15529 illuminated overhead pixels. Moon detail swatches are magnified; image is a CPU approximation, not a Unity render.

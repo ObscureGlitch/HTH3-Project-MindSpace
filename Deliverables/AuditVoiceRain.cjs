@@ -36,6 +36,7 @@ const configs = [
 ];
 const ids = configs.map(p => fs.readFileSync(p, 'utf8').match(/agentId: (\S+)/)[1]);
 check('Both agent IDs match the source repository', ids.every(id => settings.includes('agentId: ' + id)) && (settings.match(/agentId:/g) || []).length === 2);
+check('Both companions request Gemini 3.1 Pro Preview', (settings.match(/llmModel: gemini-3\.1-pro-preview/g) || []).length === 2);
 check('15-second startup and ten-minute session limits saved', /connectionTimeoutSeconds: 15/.test(settings) && /maximumSessionSeconds: 600/.test(settings));
 const audio = read('Integrations/Audio/GardenRain.mp3.meta');
 check('Rain audio is mono, streamed and 22.05 kHz', /loadType: 2/.test(audio) && /sampleRateOverride: 22050/.test(audio) && /forceToMono: 1/.test(audio) && /preloadAudioData: 0/.test(audio));

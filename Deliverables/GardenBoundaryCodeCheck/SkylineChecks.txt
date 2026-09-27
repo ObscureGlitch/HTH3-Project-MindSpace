@@ -1,0 +1,1 @@
+PASS: 49382 CPU skyline/perimeter checks; seamless 360-degree profiles, below .34 elevation, actual 224-point terrain perimeter complete. Preview bands: daylight / sunset / night / rain. Not a Unity render.

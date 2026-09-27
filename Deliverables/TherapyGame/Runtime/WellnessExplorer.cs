@@ -16,7 +16,7 @@ namespace TheLastWatch.Player
         private WellnessRoomInput _input;
         private float _pitch, _verticalSpeed;
         private bool _released;
-        private bool _uiInputBlocked, _cursorBeforeUi;
+        private bool _uiInputBlocked, _cursorBeforeUi, _theatreMode;
         private WellnessInteraction _focused;
         private WellnessSeat _focusedSeat, _occupiedSeat;
         private int _focusedSpot = -1, _occupiedSpot = -1;
@@ -40,6 +40,7 @@ namespace TheLastWatch.Player
         public bool IsUiInputBlocked => _uiInputBlocked;
         public bool useReferenceHud;
         public bool CursorReleased => _released;
+        public bool TheatreMode => _theatreMode;
         public float TransitionFade => _fade;
         public string NoticeMessage => Time.unscaledTime<_messageUntil?_message:null;
         public string HudPrompt
@@ -60,6 +61,12 @@ namespace TheLastWatch.Player
             if (_uiInputBlocked == blocked) return;
             if (blocked) { _cursorBeforeUi = _released; _uiInputBlocked = true; SetCursor(true); }
             else { _uiInputBlocked = false; SetCursor(_cursorBeforeUi); }
+        }
+
+        public void SetTheatreMode(bool enabled)
+        {
+            _theatreMode = enabled;
+            if (enabled) SetCursor(false);
         }
 
         public void Configure(Camera camera) { viewCamera = camera; }
@@ -87,7 +94,7 @@ namespace TheLastWatch.Player
                 _controller.enabled = _standingControllerEnabled;
             }
             _seated = _transitioning = _hasStandingState = false; _fade = 0;
-            _uiInputBlocked = false;
+            _uiInputBlocked = _theatreMode = false;
             _occupiedSeat = _focusedSeat = null; _occupiedSpot = _focusedSpot = -1; _focused = null;
             SetCursor(true);
         }
@@ -102,8 +109,8 @@ namespace TheLastWatch.Player
             Cursor.lockState = released ? CursorLockMode.None : CursorLockMode.Locked;
             Cursor.visible = released;
         }
-        private void ToggleCursor() { if (!_uiInputBlocked) SetCursor(!_released); }
-        private void Resume() { if (_released && !_uiInputBlocked) SetCursor(false); }
+        private void ToggleCursor() { if (!_uiInputBlocked && !_theatreMode) SetCursor(!_released); }
+        private void Resume() { if (_released && !_uiInputBlocked && !_theatreMode) SetCursor(false); }
         private void StandFromInput() { if (!_released && !_uiInputBlocked) TryStand(); }
         private void Interact()
         {
@@ -254,7 +261,7 @@ namespace TheLastWatch.Player
         }
         private void OnGUI()
         {
-            if (_uiInputBlocked || useReferenceHud) return;
+            if (_uiInputBlocked || _theatreMode || useReferenceHud) return;
             if (_panel == null)
             {
                 _panel = new Texture2D(1, 1); _panel.SetPixel(0, 0, new Color(.10f, .14f, .12f, .88f)); _panel.Apply();
@@ -271,7 +278,7 @@ namespace TheLastWatch.Player
             string seatLabel = _occupiedSeat != null ? _occupiedSeat.Label(_occupiedSpot) : "Seat";
             GUI.Label(new Rect(44, 70, 290, 28), _seated ? "Sitting · " + seatLabel : "Look at a seat to choose your spot", _smallStyle);
             GUI.DrawTexture(new Rect(24, height - 53, 570, 29), _panel);
-            GUI.Label(new Rect(38, height - 51, 550, 26), _seated ? "Mouse  Look     Space  Stand up     E  Notice / stand     Esc  Cursor" : "WASD  Walk     Mouse  Look     E  Sit / door / notice     Esc  Cursor", _smallStyle);
+            GUI.Label(new Rect(38, height - 51, 550, 26), _seated ? "Mouse  Look     Space  Stand up     E  Notice / stand     Alt  Cursor" : "WASD  Walk     Mouse  Look     E  Sit / door / notice     Alt  Cursor", _smallStyle);
             if (!_released && !_transitioning) GUI.Label(new Rect(width / 2f - 8, height / 2f - 12, 16, 24), _focusedSeat != null && !_seated ? "○" : "·", _bodyStyle);
             string prompt = null;
             if (_released) prompt = "Cursor released · Press Enter to explore";

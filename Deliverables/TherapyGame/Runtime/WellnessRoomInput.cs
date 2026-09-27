@@ -16,7 +16,7 @@ namespace TheLastWatch.Input
             _move.AddCompositeBinding("2DVector").With("Up", "<Keyboard>/w").With("Down", "<Keyboard>/s").With("Left", "<Keyboard>/a").With("Right", "<Keyboard>/d");
             _look = _map.AddAction("Look", InputActionType.Value, "<Mouse>/delta");
             _map.AddAction("Notice", InputActionType.Button, "<Keyboard>/e").performed += _ => InteractPerformed?.Invoke();
-            _map.AddAction("ReleaseCursor", InputActionType.Button, "<Keyboard>/escape").performed += _ => PausePerformed?.Invoke();
+            _map.AddAction("ReleaseCursor", InputActionType.Button, "<Keyboard>/leftAlt").performed += _ => PausePerformed?.Invoke();
             _map.AddAction("Resume", InputActionType.Button, "<Keyboard>/enter").performed += _ => SubmitPerformed?.Invoke();
             _map.AddAction("StandUp", InputActionType.Button, "<Keyboard>/space").performed += _ => StandPerformed?.Invoke();
         }

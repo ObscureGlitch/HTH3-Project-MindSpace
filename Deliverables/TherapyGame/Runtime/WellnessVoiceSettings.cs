@@ -12,6 +12,8 @@ namespace TheLastWatch.Integrations
             public string displayName;
             [Tooltip("Public agent identifier only. Never put an API key here.")]
             public string agentId;
+            [Tooltip("Optional ElevenLabs-supported LLM identifier requested for this conversation. LLM overrides must be enabled in the agent's Security settings.")]
+            public string llmModel = "gemini-3.1-pro-preview";
             public string colorVariable;
         }
         public Agent[] agents = Array.Empty<Agent>();

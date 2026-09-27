@@ -1,0 +1,6 @@
+System.Exception: Night-sky shader import has errors or is incomplete: NaturalSky
+Compilation failed (other error) 'out of memory during compilation
+'
+  at TherapyGame.Editor.TherapyNightSkyUpgrade.CheckImportedMaterial (UnityEngine.Material material) [0x0004e] in D:\Unity\HTH3 Project\Assets\TherapyGame\Editor\TherapyNightSkyUpgrade.cs:79 
+  at TherapyGame.Editor.TherapyNightSkyUpgrade.Install () [0x000fb] in D:\Unity\HTH3 Project\Assets\TherapyGame\Editor\TherapyNightSkyUpgrade.cs:37 
+  at TherapyGame.Editor.TherapyNightSkyUpgrade.Once () [0x00098] in D:\Unity\HTH3 Project\Assets\TherapyGame\Editor\TherapyNightSkyUpgrade.cs:25 

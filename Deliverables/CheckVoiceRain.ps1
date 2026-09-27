@@ -1,7 +1,7 @@
-param([switch]$TherapyOnly, [string]$OutputDirectory = 'D:\Hack the Hill\Deliverables\VoiceRainCodeCheck')
+param([switch]$TherapyOnly, [string]$OutputDirectory = 'D:\Hack the Hill\Deliverables\VoiceRainCodeCheck', [string]$SourceDirectory = 'D:\Hack the Hill\Deliverables\TherapyGame')
 $ErrorActionPreference = 'Stop'
 $project = 'D:\Unity\HTH3 Project'
-$staging = 'D:\Hack the Hill\Deliverables\TherapyGame'
+$staging = $SourceDirectory
 $sdk = 'D:\Hack the Hill\Deliverables\UnityPackages\io.elevenlabs.agents'
 $output = $OutputDirectory
 $dotnet = 'D:\Unity\6000.6.3f1\Editor\Data\DotNetSdk\dotnet.exe'

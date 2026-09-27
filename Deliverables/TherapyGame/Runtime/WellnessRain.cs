@@ -54,7 +54,7 @@ namespace TheLastWatch.Integrations
             float indoors = IndoorBlend(eye);
             if (rainAudio != null)
             {
-                float target = mix * Mathf.Lerp(.35f, .075f, indoors) * (VoiceDucking ? .28f : 1);
+                float target = mix * Mathf.Lerp(.35f, .075f, indoors) * (VoiceDucking ? .28f : 1) * TheLastWatch.Audio.OutdoorNatureAmbience.MasterVolume;
                 rainAudio.volume = Mathf.MoveTowards(rainAudio.volume, target, dt * .3f);
                 if (mix > .001f && rainAudio.clip != null && !rainAudio.isPlaying) rainAudio.Play();
                 if (mix <= .001f && rainAudio.isPlaying) rainAudio.Pause();

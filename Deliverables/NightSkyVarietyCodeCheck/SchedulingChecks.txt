@@ -1,0 +1,5 @@
+PASS: 3,600-second deterministic clear-night simulation; 5358 active trail samples, 124 events, 35 groups, 10 trios; peak 3 trails.
+PASS: normalized directions, horizon clearance, bounded brightness, slow aurora fades and quiet intervals.
+PASS: daytime/storm gating, independent toggles, invalid/stalled dt, pause/no catch-up, 32/64 FPS agreement.
+PASS: 400 simulated nights: 195 selected, 205 quiet; 199 compositions, 145 overhead, all azimuth octants and palette ranges.
+PASS: storms, comfort toggles and moving the camera do not reroll the nightly decision or reposition an active aurora.

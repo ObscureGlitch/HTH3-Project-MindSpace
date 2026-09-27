@@ -167,7 +167,7 @@ namespace TheLastWatch.Editor
             Mat("Throw", "8D9788", .08f, "RugWeave", true); Mat("Curtain", "E5DFCD", .1f, "LinenWeave", true);
             Mat("Leaf", "647C49", .24f, null, true); Mat("LeafLight", "8A9B60", .23f, null, true);
             Mat("LeafDark", "4F6948", .22f, null, true); Mat("Stem", "75805A", .15f);
-            Mat("Pot", "C2B49D", .26f, "Plaster"); Mat("Terracotta", "BD8E73", .18f, "Plaster");
+            Mat("Terracotta", "BD8E73", .18f, "Plaster");
             Mat("Soil", "635C4A", .04f); Mat("Basket", "BAA17B", .1f, "RugWeave");
             Mat("Ceramic", "E5DFD1", .4f); Mat("Stone", "AAAFA8", .27f, "Plaster");
             Mat("Metal", "666457", .43f); Mat("Brass", "A18E65", .55f); Mat("Paper", "E6DDC8", .06f);

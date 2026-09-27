@@ -1,0 +1,9 @@
+Conversation-driven companion animations installed 2026-09-27T05:41:24
+PASS: supplied Julien GLB SHA-256 1c0f781e31bf70756c8b5b4775ca3d8ee3301efb43d7d1dece78db4eb53c5545.
+PASS: supplied Camille GLB SHA-256 69130fbf9e5d7e6308b730f495c17f19b48c80a1cf81f7e45a61ca1bfd2e0c85.
+PASS: Julien uses nine supplied clips on its existing 57-bone corrected rig; geometry, materials, collider, transform and five live vowel shapes are unchanged.
+PASS: Camille uses nine supplied clips on its existing 57-bone corrected rig; geometry, materials, collider, transform and five live vowel shapes are unchanged.
+PASS: deterministic mapping is Idle=disconnected, Listen=connected/user speaking, Talk=agent speaking, Nod=completed user transcript, Think=response pending, Write=agent speech completed, Wave=companion activated.
+PASS: Walk and Sit are imported for completeness but never selected while these companions remain stationary and standing.
+PASS: authored GLB morph-target tracks were excluded so real-time uLipSync vowel weights remain authoritative during Talk.
+No random animation choices, model replacement, Play mode, microphone, remote agent session, GPU preview, bake or reflection capture were used. Live appearance and voice timing still need a brief user-controlled check.

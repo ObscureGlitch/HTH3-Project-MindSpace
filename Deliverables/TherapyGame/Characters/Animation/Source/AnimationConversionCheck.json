@@ -1,0 +1,178 @@
+{
+  "ok": true,
+  "method": "GLTFLoader CPU clip conversion; installed corrected geometry retained because source geometry/materials/bind rig match",
+  "deterministicMapping": {
+    "Idle": "no active conversation",
+    "Listen": "connected and waiting for or receiving the user turn",
+    "Talk": "agent conversation mode is Speaking",
+    "Nod": "completed user transcript event",
+    "Write": "agent Speaking mode just ended",
+    "Think": "completed user turn awaiting an agent response",
+    "Wave": "companion becomes active",
+    "Walk": "imported but intentionally unused while character remains stationary",
+    "Sit": "imported but intentionally unused while character remains standing"
+  },
+  "reports": [
+    {
+      "person": "julien",
+      "sourceHash": "1c0f781e31bf70756c8b5b4775ca3d8ee3301efb43d7d1dece78db4eb53c5545",
+      "triangles": 10776,
+      "materials": 30,
+      "currentBones": 57,
+      "retainedTracksPerClip": 33,
+      "skippedAuthoredTargets": [
+        "hair_back.quaternion",
+        "head_skin_beard_short.morphTargetInfluences",
+        "head_skin_skin.morphTargetInfluences",
+        "lips.morphTargetInfluences",
+        "mouth_interior.morphTargetInfluences",
+        "teeth_lower.morphTargetInfluences",
+        "teeth_upper.morphTargetInfluences",
+        "tongue.morphTargetInfluences"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "duration": 6,
+          "tracks": 33
+        },
+        {
+          "name": "Listen",
+          "duration": 6,
+          "tracks": 33
+        },
+        {
+          "name": "Talk",
+          "duration": 4,
+          "tracks": 33
+        },
+        {
+          "name": "Nod",
+          "duration": 1.6,
+          "tracks": 33
+        },
+        {
+          "name": "Write",
+          "duration": 4,
+          "tracks": 33
+        },
+        {
+          "name": "Think",
+          "duration": 5,
+          "tracks": 33
+        },
+        {
+          "name": "Wave",
+          "duration": 2.4000001,
+          "tracks": 33
+        },
+        {
+          "name": "Walk",
+          "duration": 1.1,
+          "tracks": 33
+        },
+        {
+          "name": "Sit",
+          "duration": 6,
+          "tracks": 33
+        }
+      ],
+      "maximumBindPositionError": 7.260632649030382e-8,
+      "maximumBindRotationError": 0.03559145509154639,
+      "maximumBindScaleError": 6.661338147750939e-16,
+      "bounds": {
+        "min": [
+          -0.3105937,
+          -0.0007359,
+          -0.1706776
+        ],
+        "max": [
+          0.3175979,
+          1.8403781,
+          0.3990238
+        ]
+      }
+    },
+    {
+      "person": "camille",
+      "sourceHash": "69130fbf9e5d7e6308b730f495c17f19b48c80a1cf81f7e45a61ca1bfd2e0c85",
+      "triangles": 13954,
+      "materials": 29,
+      "currentBones": 57,
+      "retainedTracksPerClip": 33,
+      "skippedAuthoredTargets": [
+        "front_lock_L.quaternion",
+        "front_lock_R.quaternion",
+        "hair_long.quaternion",
+        "head_skin_skin_face.morphTargetInfluences",
+        "lips.morphTargetInfluences",
+        "mouth_interior.morphTargetInfluences",
+        "teeth_lower.morphTargetInfluences",
+        "teeth_upper.morphTargetInfluences",
+        "tongue.morphTargetInfluences"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "duration": 6,
+          "tracks": 33
+        },
+        {
+          "name": "Listen",
+          "duration": 6,
+          "tracks": 33
+        },
+        {
+          "name": "Talk",
+          "duration": 4,
+          "tracks": 33
+        },
+        {
+          "name": "Nod",
+          "duration": 1.6,
+          "tracks": 33
+        },
+        {
+          "name": "Write",
+          "duration": 4,
+          "tracks": 33
+        },
+        {
+          "name": "Think",
+          "duration": 5,
+          "tracks": 33
+        },
+        {
+          "name": "Wave",
+          "duration": 2.4000001,
+          "tracks": 33
+        },
+        {
+          "name": "Walk",
+          "duration": 1.1,
+          "tracks": 33
+        },
+        {
+          "name": "Sit",
+          "duration": 6,
+          "tracks": 33
+        }
+      ],
+      "maximumBindPositionError": 3.657679653059836e-8,
+      "maximumBindRotationError": 0.03559145509154639,
+      "maximumBindScaleError": 4.1540741810552243e-16,
+      "bounds": {
+        "min": [
+          -0.3288647,
+          -0.0006232,
+          -0.1724338
+        ],
+        "max": [
+          0.2706566,
+          1.7372718,
+          0.3716449
+        ]
+      }
+    }
+  ]
+}

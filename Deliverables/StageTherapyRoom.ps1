@@ -22,7 +22,8 @@ $runtimeFiles = @(
     'Scripts\Interaction\WellnessInteraction.cs',
     'Scripts\Environment\WellnessBreathingOrb.cs',
     'Scripts\Environment\WellnessScenePipeline.cs',
-    'Scripts\Audio\BackgroundMusicPlayer.cs'
+    'Scripts\Audio\BackgroundMusicPlayer.cs',
+    'Scripts\Audio\OutdoorNatureAmbience.cs'
 )
 foreach ($relative in $runtimeFiles) {
     $path = Join-Path $sourceRoot ('Assets\_Project\' + $relative)

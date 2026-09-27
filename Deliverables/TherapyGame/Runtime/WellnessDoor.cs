@@ -8,6 +8,7 @@ namespace TheLastWatch.Interaction
     {
         public BoxCollider leaf;
         public CharacterController player;
+        public CapsuleCollider[] companions=new CapsuleCollider[0];
         [Range(30, 140)] public float openAngle = 105;
         [Range(20, 120)] public float degreesPerSecond = 70;
         private Quaternion initialRotation;
@@ -15,6 +16,9 @@ namespace TheLastWatch.Interaction
         private float angle;
         private bool targetOpen, moving, initialized;
         public string Prompt => targetOpen ? "Close door" : "Open door";
+        // A player's close command takes effect immediately, before the swing finishes.
+        public bool AllowsCompanionPassage => initialized&&isActiveAndEnabled&&
+            TheLastWatch.Integrations.WellnessCompanionRoomPolicy.DoorAllowsPassage(targetOpen,angle);
         // Actual opening, not the target: a door stopped by the player still transmits sound.
         public float VoiceOpening => OpeningForAngle(initialized ? angle : Mathf.DeltaAngle(0, transform.localEulerAngles.y));
         public static float OpeningForAngle(float degrees) => Mathf.SmoothStep(0, 1, Mathf.InverseLerp(5, 65, Mathf.Abs(degrees)));
@@ -54,6 +58,15 @@ namespace TheLastWatch.Interaction
             int steps = Mathf.Max(1, Mathf.CeilToInt(Mathf.Abs(to - from) / 2f));
             for (int i = 0; i <= steps; i++)
                 if (BlocksLeaf(local, radius, halfHeight, leafCenter, leafHalfSize, Mathf.Lerp(from, to, i / (float)steps))) return false;
+            foreach(var companion in companions)
+            {
+                if(companion==null||!companion.enabled||!companion.gameObject.activeInHierarchy)continue;
+                Vector3 relative=Quaternion.Inverse(parentRotation)*(companion.transform.TransformPoint(companion.center)-transform.position);
+                float r=companion.radius*Mathf.Max(companion.transform.lossyScale.x,companion.transform.lossyScale.z);
+                float h=companion.height*companion.transform.lossyScale.y*.5f;
+                for(int i=0;i<=steps;i++)
+                    if(BlocksLeaf(relative,r,h,leafCenter,leafHalfSize,Mathf.Lerp(from,to,i/(float)steps)))return false;
+            }
             return true;
         }
 

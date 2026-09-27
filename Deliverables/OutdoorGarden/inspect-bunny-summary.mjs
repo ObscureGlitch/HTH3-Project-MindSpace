@@ -7,6 +7,10 @@ globalThis.ProgressEvent ??= class ProgressEvent {};
 const path = process.argv[2];
 const bytes = await readFile(path);
 const loader = new GLTFLoader();
+// CPU inspection only: embedded images are preserved by the export pipeline,
+// but Node has no browser Image implementation and geometry/animation checks
+// do not need decoded pixels.
+loader.register(() => ({ name: 'CPU texture stub', loadTexture: async () => new THREE.Texture() }));
 const gltf = await loader.parseAsync(
   bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength),
   '',

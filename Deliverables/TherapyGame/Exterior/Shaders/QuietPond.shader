@@ -8,6 +8,18 @@ Shader "Therapy Game/Quiet Pond"
         _Pond ("Centre XZ / radii XZ", Vector) = (15, -5, 6.7, 5.7)
         _Opacity ("Water tint opacity", Range(0, 1)) = 0.64
         _RippleStrength ("Ripple strength", Range(0, 0.2)) = 0.055
+        _ReflectionStrength ("Sky reflection",Range(0,1)) = .82
+        [HideInInspector] _TopColor ("Sky zenith",Color) = (.19,.42,.72,1)
+        [HideInInspector] _HorizonColor ("Sky horizon",Color) = (.69,.80,.89,1)
+        [HideInInspector] _GroundColor ("Sky ground",Color) = (.36,.43,.44,1)
+        [HideInInspector] _SunDirection ("Sky sun",Vector) = (-.7,.7,.22,0)
+        [HideInInspector] _Night ("Night",Float) = 0
+        [HideInInspector] _Storm ("Storm",Float) = 0
+        [HideInInspector] _StarRotation ("Star rotation",Float) = 0
+        [HideInInspector] _NightEffects ("Shared night display",Vector) = (0,0,0,0)
+        [HideInInspector] _AuroraShape ("Shared aurora composition",Vector) = (.7,1.1,.5,0)
+        [HideInInspector] _CloudAtlas ("Shared cloud atlas",2D) = "black" {}
+        [HideInInspector] _PondCloudSingle ("Single full-texture cloud bank",Float) = 0
     }
     SubShader
     {
@@ -29,6 +41,7 @@ Shader "Therapy Game/Quiet Pond"
             #define _SURFACE_TYPE_TRANSPARENT 1
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+            TEXTURE2D(_CloudAtlas);SAMPLER(sampler_CloudAtlas);
 
             CBUFFER_START(UnityPerMaterial)
                 half4 _BaseColor;
@@ -37,7 +50,42 @@ Shader "Therapy Game/Quiet Pond"
                 float4 _Pond;
                 half _Opacity;
                 half _RippleStrength;
+                half _ReflectionStrength;
+                half4 _TopColor,_HorizonColor,_GroundColor,_CloudTint;
+                float4 _SunDirection;
+                float _Night,_Storm,_StarRotation;
+                float4 _NightEffects,_AuroraShape;
+                float4 _MeteorHeads[3],_MeteorTangents[3],_MeteorSides[3];
+                int _PondCloudCount;
+                float _PondCloudSingle;
+                float4 _CloudFacing[16],_CloudRight[16],_CloudUp[16];
             CBUFFER_END
+            #include "../../Weather/Shaders/WellnessSkySampling.hlsl"
+            #include "../../Weather/Shaders/WellnessCloudOcclusion.hlsl"
+            half3 ReflectedSky(float3 direction)
+            {
+                half3 sky=WellnessSky(direction,_TopColor.rgb,_HorizonColor.rgb,_GroundColor.rgb,
+                    _SunDirection.xyz,_Night,_Storm,_StarRotation);
+                // At most sixteen cheap angular rectangle tests. Only overlapping cards
+                // sample the existing mipmapped atlas; no scene/depth/opaque texture copy.
+                [loop] for(int k=0;k<_PondCloudCount;k++)
+                {
+                    float facing=dot(direction,_CloudFacing[k].xyz);
+                    float2 uv=float2(dot(direction,_CloudRight[k].xyz),dot(direction,_CloudUp[k].xyz))/max(.001,facing)+.5;
+                    [branch] if(facing>.01&&_CloudFacing[k].w>.001&&all(uv>0)&&all(uv<1))
+                    {
+                        float2 atlas=_PondCloudSingle>.5?uv:(uv+float2(_CloudRight[k].w,_CloudUp[k].w))*float2(.25,.5);
+                        half4 photo=SAMPLE_TEXTURE2D_LOD(_CloudAtlas,sampler_CloudAtlas,atlas,1);
+                        half detail=dot(photo.rgb,half3(.2126,.7152,.0722));
+                        half haze=1-smoothstep(.05,.5,_CloudFacing[k].y);
+                        half3 cloud=lerp(detail*_CloudTint.rgb,_HorizonColor.rgb,haze*.48);
+                        float2 border=min(uv,1-uv);
+                        half visible=_PondCloudSingle>.5?WellnessCloudSkyVisibility(direction):1;
+                        sky=lerp(sky,cloud,photo.a*_CloudFacing[k].w*smoothstep(0,.045,min(border.x,border.y))*visible);
+                    }
+                }
+                return sky;
+            }
             struct Attributes { float4 positionOS : POSITION; };
             struct Varyings { float4 positionCS : SV_POSITION; float3 positionWS : TEXCOORD0; };
             Varyings Vert(Attributes input)
@@ -71,7 +119,11 @@ Shader "Therapy Game/Quiet Pond"
                 half lightStrength = saturate(max(sun.color.r, max(sun.color.g, sun.color.b)));
                 half lighting = 0.84 + 0.16 * saturate(dot(n, sun.direction)) * sun.shadowAttenuation * lightStrength;
                 half3 water = tint * lighting;
-                water = lerp(water, _SkyTint.rgb, 0.10 + fresnel * 0.50);
+                float3 reflectedDirection=normalize(reflect(-view,n));
+                half3 skyReflection=ReflectedSky(reflectedDirection);
+                // Keep teal water and the shallow bed visible, especially near the bank.
+                half reflection=(.30+fresnel*.52)*_ReflectionStrength*lerp(1,.72,shore);
+                water = lerp(water,skyReflection,reflection);
                 half3 halfDirection = SafeNormalize(sun.direction + view);
                 half glint = pow(saturate(dot(n, halfDirection)), 64) * 0.14 * sun.shadowAttenuation;
                 water += min(sun.color, half3(1.5, 1.5, 1.5)) * glint;

@@ -47,7 +47,7 @@ The exterior uses one softly painted lake backdrop beyond a real window opening,
 
 ## Audio
 
-Seven supplied background tracks load automatically from `Resources/TheLastWatch/BackgroundMusic`. The persistent `BackgroundMusicPlayer` shuffles them without replacement, so every track plays exactly once before the playlist reshuffles. A new cycle is adjusted when necessary so its first track never matches the previous cycle's last track. Music is streamed, non-spatial, and mixed at 10% volume; the three scene Audio children remain available for separate room-tone and nature ambience.
+Seven supplied background tracks load automatically from `Resources/TheLastWatch/BackgroundMusic`. The persistent `BackgroundMusicPlayer` shuffles them without replacement, so every track plays exactly once before the playlist reshuffles. A new cycle is adjusted when necessary so its first track never matches the previous cycle's last track. Music is streamed, non-spatial, and mixed at 10% volume. Separate streamed daytime-nature and nighttime ambience loops follow the sky cycle: they crossfade through dawn and dusk, stay silent indoors, fade in as the player crosses outside the room, and fade out again on re-entry. The scene Audio children remain available for other room-tone and weather layers.
 
 ## Verification outputs
 
