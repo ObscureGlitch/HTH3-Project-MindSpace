@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "method": "GLTFLoader CPU conversion; no rendered visual check",
+  "reports": [
+    {
+      "person": "julien",
+      "sourceMeshes": 178,
+      "sourceTriangles": 10776,
+      "removedDuplicateFaceTriangles": 0,
+      "bones": 57,
+      "triangles": 10776,
+      "vertices": 34308,
+      "renderers": 3,
+      "materials": 30,
+      "maxBindError": 5.095364496928083e-16,
+      "standingBounds": {
+        "min": [
+          -0.3105937,
+          -0.0007359,
+          -0.1421031
+        ],
+        "max": [
+          0.3175979,
+          1.8403781,
+          0.3990238
+        ]
+      }
+    },
+    {
+      "person": "camille",
+      "sourceMeshes": 170,
+      "sourceTriangles": 15214,
+      "removedDuplicateFaceTriangles": 1260,
+      "bones": 57,
+      "triangles": 13954,
+      "vertices": 37664,
+      "renderers": 3,
+      "materials": 30,
+      "maxBindError": 6.987641870837213e-16,
+      "standingBounds": {
+        "min": [
+          -0.3288647,
+          -0.0006232,
+          -0.1724338
+        ],
+        "max": [
+          0.2706566,
+          1.7372718,
+          0.3716449
+        ]
+      }
+    }
+  ]
+}

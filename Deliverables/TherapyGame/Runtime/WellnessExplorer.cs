@@ -38,6 +38,22 @@ namespace TheLastWatch.Player
         public int FocusedSpot => _focusedSpot;
         public Camera ViewCamera => viewCamera;
         public bool IsUiInputBlocked => _uiInputBlocked;
+        public bool useReferenceHud;
+        public bool CursorReleased => _released;
+        public float TransitionFade => _fade;
+        public string NoticeMessage => Time.unscaledTime<_messageUntil?_message:null;
+        public string HudPrompt
+        {
+            get
+            {
+                if(_released)return "Press Enter to explore";
+                if(_transitioning)return null;
+                if(_seated)return _focused!=null&&_focusedSeat==null?_focused.Prompt:"Stand up";
+                if(_focusedSeat!=null)return "Sit · "+_focusedSeat.Label(_focusedSpot);
+                return _focused!=null?_focused.Prompt:null;
+            }
+        }
+        public string HudPromptKey => _released?"Enter":_seated&&(_focused==null||_focusedSeat!=null)?"Space":"E";
 
         public void SetUiInputBlocked(bool blocked)
         {
@@ -238,7 +254,7 @@ namespace TheLastWatch.Player
         }
         private void OnGUI()
         {
-            if (_uiInputBlocked) return;
+            if (_uiInputBlocked || useReferenceHud) return;
             if (_panel == null)
             {
                 _panel = new Texture2D(1, 1); _panel.SetPixel(0, 0, new Color(.10f, .14f, .12f, .88f)); _panel.Apply();

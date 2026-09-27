@@ -1,6 +1,7 @@
 {
   "name": "TherapyGame.Runtime",
   "rootNamespace": "TheLastWatch",
-  "references": ["Unity.InputSystem", "ElevenLabs.Agents.Core"],
+  "references": ["Unity.InputSystem", "ElevenLabs.Agents.Core", "Unity.Collections", "Unity.Mathematics", "Unity.Burst"],
+  "allowUnsafeCode": true,
   "autoReferenced": true
 }

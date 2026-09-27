@@ -1,0 +1,113 @@
+{
+  "ok": true,
+  "method": "CPU-only modeling, geometry and terrain clearance; no rendered/performance verification",
+  "staticBatches": 11,
+  "triangles": 32276,
+  "flowers": 165,
+  "flowerTypes": [
+    "daisy",
+    "bluebell",
+    "lavender",
+    "poppy",
+    "clover"
+  ],
+  "trees": 12,
+  "ferns": 24,
+  "mushroomClusters": 12,
+  "logs": 3,
+  "rabbits": 3,
+  "squirrels": 3,
+  "birds": 5,
+  "groundError": 1.734723475976807e-17,
+  "minPathDistance": 1.5378671568617646,
+  "animalHomes": [
+    {
+      "name": "Meadow rabbit 1",
+      "home": [
+        3.883148889988661,
+        -0.1271543616356452,
+        -7.705347841605544
+      ]
+    },
+    {
+      "name": "Meadow rabbit 2",
+      "home": [
+        6.003952521830797,
+        0.2725751205336675,
+        5.959944190457463
+      ]
+    },
+    {
+      "name": "Meadow rabbit 3",
+      "home": [
+        21.39383691176772,
+        -0.21414206910495956,
+        -15.72589605115354
+      ]
+    },
+    {
+      "name": "Red squirrel 4",
+      "home": [
+        -8.476649306714535,
+        -0.49803416591310246,
+        4.20128477178514
+      ]
+    },
+    {
+      "name": "Red squirrel 5",
+      "home": [
+        29.252674154937267,
+        -0.06395769209009906,
+        -16.663709262385964
+      ]
+    },
+    {
+      "name": "Red squirrel 6",
+      "home": [
+        17.291782896965742,
+        -1.147668471594341,
+        9.815115684643388
+      ]
+    },
+    {
+      "name": "Meadow songbird 7",
+      "home": [
+        7.523290392011404,
+        0.28887911099086205,
+        -17.17169343493879
+      ]
+    },
+    {
+      "name": "Meadow songbird 8",
+      "home": [
+        24.13951138406992,
+        -0.35219238650206475,
+        11.075112765654922
+      ]
+    },
+    {
+      "name": "Meadow songbird 9",
+      "home": [
+        -4.215380918234587,
+        -0.5192018232612188,
+        -17.034380642697215
+      ]
+    },
+    {
+      "name": "Meadow songbird 10",
+      "home": [
+        1.5326937139034271,
+        0.7510052247076234,
+        7.892678884789348
+      ]
+    },
+    {
+      "name": "Meadow songbird 11",
+      "home": [
+        28.54691408574581,
+        0.29039206028964365,
+        -3.942880170419812
+      ]
+    }
+  ]
+}

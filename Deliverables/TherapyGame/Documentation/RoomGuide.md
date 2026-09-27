@@ -47,7 +47,7 @@ The exterior uses one softly painted lake backdrop beyond a real window opening,
 
 ## Audio
 
-The three Audio children are intentional placeholders for room tone, distant wind/rain, and nature loops. Assign licensed clips and enable Play On Awake when ready. No audio is recorded, downloaded, or played by default.
+Seven supplied background tracks load automatically from `Resources/TheLastWatch/BackgroundMusic`. The persistent `BackgroundMusicPlayer` shuffles them without replacement, so every track plays exactly once before the playlist reshuffles. A new cycle is adjusted when necessary so its first track never matches the previous cycle's last track. Music is streamed, non-spatial, and mixed at 10% volume; the three scene Audio children remain available for separate room-tone and nature ambience.
 
 ## Verification outputs
 

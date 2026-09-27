@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs><linearGradient id="bg" x2=".6" y2="1"><stop stop-color="#8f9a82"/><stop offset="1" stop-color="#c6b899"/></linearGradient><style>
+text{font-family:'Segoe UI',Arial,sans-serif;fill:#303b33} .small{font-size:12px;fill:#667064} .heading{font-size:13px;font-weight:600} .tag{font-size:10px;fill:#667064;font-weight:600;letter-spacing:1px} .card{fill:#f0ece2;fill-opacity:.9} .button{fill:#fffdf4;fill-opacity:.88} .key{font-size:14px} .body{font-size:17px}
+</style></defs>
+<rect width="1280" height="720" fill="url(#bg)"/>
+<path d="M0 475L640 363L1280 478V720H0Z" fill="#a8977b" opacity=".45"/>
+<path d="M0 471L640 362V0H0Z" fill="#62725e" opacity=".18"/>
+<text x="640" y="30" text-anchor="middle" class="tag" opacity=".5">CPU LAYOUT PREVIEW · NOT A UNITY CAPTURE</text>
+<rect x="28" y="27" width="300" height="178" rx="14" fill="#26362c" opacity=".09"/>
+<rect x="28" y="24" width="300" height="178" rx="14" class="card"/>
+<text x="44" y="51" class="heading">When you're ready  1/4</text><rect x="267" y="32" width="47" height="27" rx="7" class="button"/><text x="278" y="51" class="key">J  −</text>
+<circle cx="48.5" cy="76.5" r="4.5" fill="#5c8769"/><text x="62" y="80" class="small">Settle into the room</text>
+<circle cx="48.5" cy="103.5" r="4" fill="none" stroke="#667064"/><text x="62" y="107" class="small">Tell your guide how today felt</text>
+<text x="62" y="133" class="small" opacity=".8">A word or two is plenty. No rush.</text>
+<circle cx="48.5" cy="147.5" r="4" fill="none" stroke="#667064"/><text x="62" y="151" class="small">Try the breathing orb</text>
+<circle cx="48.5" cy="175.5" r="4" fill="none" stroke="#667064"/><text x="62" y="179" class="small">Notice three things in the room  0/3</text>
+<rect x="1106" y="24" width="146" height="40" rx="13" class="card"/><rect x="1114" y="29" width="130" height="30" rx="8" class="button"/><text x="1140" y="49" class="key">Settings   F1</text>
+<rect x="1008" y="76" width="244" height="32" rx="10" class="card"/><circle cx="1024" cy="92" r="4" fill="#5c8769"/><text x="1036" y="97" class="small">Mic live · M mute · X pause</text>
+<circle cx="640" cy="360" r="2" fill="#fffef2"/>
+<rect x="470" y="385.2" width="340" height="38" rx="16" class="card"/><rect x="479" y="392.2" width="45" height="24" rx="6" class="button"/><text x="497" y="409" font-size="11">E</text><text x="536" y="409" class="small">Sit · Reflection seat</text>
+<rect x="28" y="598" width="262" height="96" rx="14" class="card"/>
+<g fill="#5c8769"><rect x="43" y="631" width="3" height="15"/><rect x="48" y="624" width="3" height="22"/><rect x="53" y="635" width="3" height="11"/><rect x="58" y="628" width="3" height="18"/></g>
+<text x="68" y="621" class="tag">NOW PLAYING</text><text x="68" y="642" class="heading">Lofi Restaurant</text><text x="68" y="664" class="small">Room playlist · 1 of 7</text>
+<rect x="246" y="616" width="30" height="28" rx="7" class="button"/><text x="257" y="635" class="key">P</text><text x="42" y="686" class="tag">0:42</text><text x="247" y="686" class="tag">3:00</text><path d="M82 679H240" stroke="#9a9f91" stroke-width="2" opacity=".5"/><path d="M82 679H124" stroke="#5c8769" stroke-width="2"/>
+<rect x="355" y="547" width="570" height="150" rx="14" fill="#26362c" opacity=".09"/><rect x="355" y="544" width="570" height="150" rx="14" class="card"/>
+<circle cx="377.5" cy="567.5" r="4.5" fill="#5c8769"/><text x="393" y="574" class="heading">Julien</text><text x="507" y="573" class="tag">AI COMPANION</text>
+<text x="373" y="609" class="body"><tspan x="373">When you're ready, I'd love to hear how today has been.</tspan><tspan x="373" dy="23">A word or two is plenty. There's no rush.</tspan></text>
+<rect x="371" y="660" width="143" height="25" rx="8" class="button"/><text x="386" y="678" class="key">V   Voice controls</text>
+<rect x="524" y="660" width="94" height="25" rx="8" class="button"/><text x="541" y="678" class="key">T   Type</text>
+<rect x="628" y="660" width="128" height="25" rx="8" class="button"/><text x="642" y="678" class="key">Tab   Not now</text><text x="770" y="679" class="small">M  Mute mic</text>
+</svg>

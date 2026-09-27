@@ -14,12 +14,14 @@ namespace TheLastWatch.Interaction
             public Vector3 localBodyPosition = new Vector3(0, .04f, .10f);
             public float eyeHeight = 1.21f;
             public float localYaw;
+            [Tooltip("Occupied by an AI companion, not available to the player.")]
+            public bool reserved;
             public Vector3 localStandPosition = new Vector3(0, .04f, 1.15f);
         }
 
         public Spot[] spots = { new Spot() };
         public int Count => spots == null ? 0 : spots.Length;
-        public bool Valid(int index) => isActiveAndEnabled && index >= 0 && index < Count && spots[index] != null;
+        public bool Valid(int index) => isActiveAndEnabled && index >= 0 && index < Count && spots[index] != null && !spots[index].reserved;
         public string Label(int index) => Valid(index) ? spots[index].label : "Seat";
         public Vector3 BodyPosition(int index) => transform.TransformPoint(spots[index].localBodyPosition);
         public Vector3 AimPosition(int index) => BodyPosition(index) + transform.up * .62f;

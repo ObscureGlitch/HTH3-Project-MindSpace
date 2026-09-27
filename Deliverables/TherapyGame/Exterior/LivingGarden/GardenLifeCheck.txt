@@ -1,0 +1,6 @@
+Garden life installed 2026-09-26T18:09:58
+PASS: 165 flowers / five varieties; 12 varied trees; 24 ferns; 12 mushroom clusters; three mossy logs.
+PASS: three rabbits, two squirrels, five songbirds; articulated ears, heads, tails and wings; terrain-grounded routes, quiet rest phases, night/rain rest, 38 m animal visibility limit.
+PASS: 31,512 added triangles, 45 mesh renderers, 22 shared meshes, four shared texture-free materials, 12 new trunk colliders. No extra lights, cameras, NavMesh, particles or physics simulation.
+PASS: scene raycasts verify animal routes match existing terrain; trunk clearances; direction and bounded animation; seats/door/pond/sky preserved.
+No Play mode, microphone, GPU preview, lighting bake or reflection capture started. Visual appearance and performance remain unverified.

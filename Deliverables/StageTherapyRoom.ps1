@@ -6,7 +6,8 @@ $copies = @(
     @('Assets\_Project\Art\Materials\Wellness', 'Materials'),
     @('Assets\_Project\Art\Textures\Wellness', 'Textures'),
     @('Assets\_Project\Prefabs\Environment\Wellness', 'Prefabs'),
-    @('Assets\_Project\Config\Wellness', 'Settings')
+    @('Assets\_Project\Config\Wellness', 'Settings'),
+    @('Assets\_Project\Resources', 'Resources')
 )
 foreach ($pair in $copies) {
     $targetPath = Join-Path $stageRoot $pair[1]
@@ -20,7 +21,8 @@ $runtimeFiles = @(
     'Scripts\Input\WellnessRoomInput.cs',
     'Scripts\Interaction\WellnessInteraction.cs',
     'Scripts\Environment\WellnessBreathingOrb.cs',
-    'Scripts\Environment\WellnessScenePipeline.cs'
+    'Scripts\Environment\WellnessScenePipeline.cs',
+    'Scripts\Audio\BackgroundMusicPlayer.cs'
 )
 foreach ($relative in $runtimeFiles) {
     $path = Join-Path $sourceRoot ('Assets\_Project\' + $relative)

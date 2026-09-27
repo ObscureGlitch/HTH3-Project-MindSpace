@@ -1,0 +1,7 @@
+Animated squirrels installed 2026-09-26T21:09:05
+PASS: supplied animated GLB source SHA-256 0926ff96726beb51ec5beb68f6028d0bf5259a06ff330784c7bb7b998807892e.
+PASS: three squirrels total; each uses one 57,802-vertex / 107,104-triangle native skinned renderer and eight shared materials.
+PASS: Idle, Nibble, LookAround, Alert, Hop, DropAndRun and Run clips reconstructed at their supplied key times.
+PASS: route movement, viewer-aware alerting, night/rain rest and 38 m render/animation culling retained.
+PASS: saved-scene checks retained terrain grounding, no legacy squirrel renderers, no rigidbodies and no extra lights/cameras.
+No Play mode, microphone, GPU preview, lighting bake or reflection capture started. Appearance and frame rate still need a brief live check.

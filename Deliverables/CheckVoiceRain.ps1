@@ -1,9 +1,9 @@
-param([switch]$TherapyOnly)
+param([switch]$TherapyOnly, [string]$OutputDirectory = 'D:\Hack the Hill\Deliverables\VoiceRainCodeCheck')
 $ErrorActionPreference = 'Stop'
 $project = 'D:\Unity\HTH3 Project'
 $staging = 'D:\Hack the Hill\Deliverables\TherapyGame'
 $sdk = 'D:\Hack the Hill\Deliverables\UnityPackages\io.elevenlabs.agents'
-$output = 'D:\Hack the Hill\Deliverables\VoiceRainCodeCheck'
+$output = $OutputDirectory
 $dotnet = 'D:\Unity\6000.6.3f1\Editor\Data\DotNetSdk\dotnet.exe'
 $compiler = 'D:\Unity\6000.6.3f1\Editor\Data\DotNetSdk\sdk\8.0.318\Roslyn\bincore\csc.dll'
 New-Item -ItemType Directory -Path $output -Force | Out-Null
@@ -19,6 +19,12 @@ function Compile-Assembly([string]$name, [string]$sourceDirectory, [string[]]$re
         $argsList.Add($line)
     }
     $argsList.Add('-out:"' + (Join-Path $output "$name.dll") + '"')
+    if ($name -like 'TherapyGame.*') {
+        $argsList.Add('-unsafe+')
+        foreach ($dependency in @('Unity.Collections','Unity.Mathematics','Unity.Burst')) {
+            $argsList.Add('-r:"' + (Join-Path $project "Library\ScriptAssemblies\$dependency.dll") + '"')
+        }
+    }
     foreach ($reference in $references) { $argsList.Add('-r:"' + (Join-Path $output "$reference.dll") + '"') }
     foreach ($source in (Get-ChildItem -LiteralPath $sourceDirectory -Filter '*.cs' -Recurse)) {
         $argsList.Add('"' + $source.FullName + '"')

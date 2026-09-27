@@ -15,6 +15,9 @@ namespace TheLastWatch.Interaction
         private float angle;
         private bool targetOpen, moving, initialized;
         public string Prompt => targetOpen ? "Close door" : "Open door";
+        // Actual opening, not the target: a door stopped by the player still transmits sound.
+        public float VoiceOpening => OpeningForAngle(initialized ? angle : Mathf.DeltaAngle(0, transform.localEulerAngles.y));
+        public static float OpeningForAngle(float degrees) => Mathf.SmoothStep(0, 1, Mathf.InverseLerp(5, 65, Mathf.Abs(degrees)));
 
         private void OnEnable()
         {

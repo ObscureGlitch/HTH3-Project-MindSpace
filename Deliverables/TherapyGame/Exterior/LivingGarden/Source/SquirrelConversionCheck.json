@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "method": "GLTFLoader CPU conversion; no rendered visual check",
+  "source": "tiny-squirrel-animated (1).glb",
+  "sourceHash": "0926ff96726beb51ec5beb68f6028d0bf5259a06ff330784c7bb7b998807892e",
+  "triangles": 107104,
+  "vertices": 57802,
+  "sourceMeshNodes": 37,
+  "unityRenderersPerSquirrel": 1,
+  "materials": 8,
+  "bones": 24,
+  "clips": [
+    {
+      "name": "Idle",
+      "duration": 4,
+      "tracks": 31
+    },
+    {
+      "name": "Nibble",
+      "duration": 2,
+      "tracks": 31
+    },
+    {
+      "name": "LookAround",
+      "duration": 5,
+      "tracks": 31
+    },
+    {
+      "name": "Alert",
+      "duration": 1.5,
+      "tracks": 31
+    },
+    {
+      "name": "Hop",
+      "duration": 0.7,
+      "tracks": 31
+    },
+    {
+      "name": "DropAndRun",
+      "duration": 2,
+      "tracks": 31
+    },
+    {
+      "name": "Run",
+      "duration": 0.45,
+      "tracks": 31
+    }
+  ],
+  "bounds": {
+    "min": [
+      -0.017728,
+      0,
+      -0.045138
+    ],
+    "max": [
+      0.017728,
+      0.1019192,
+      0.045138
+    ]
+  },
+  "maximumRestSkinError": 4.092482743696778e-7
+}

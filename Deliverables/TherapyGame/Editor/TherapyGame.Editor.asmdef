@@ -1,6 +1,6 @@
 {
   "name": "TherapyGame.Editor",
-  "references": ["TherapyGame.Runtime", "Unity.RenderPipelines.Core.Runtime", "Unity.RenderPipelines.Universal.Runtime", "Unity.InputSystem"],
+  "references": ["TherapyGame.Runtime", "Unity.RenderPipelines.Core.Runtime", "Unity.RenderPipelines.Universal.Runtime", "Unity.InputSystem", "Unity.Collections", "Unity.Mathematics", "Unity.Burst"],
   "includePlatforms": ["Editor"],
   "autoReferenced": true
 }

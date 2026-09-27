@@ -1,0 +1,31 @@
+# Exported by three-d-stage
+newmtl fur_cream
+Kd 0.9047 0.8388 0.7454
+Ks 0.2000 0.2000 0.2000
+Ns 30
+d 1.0000
+
+newmtl fur_white
+Kd 1.0000 0.9823 0.9387
+Ks 0.2000 0.2000 0.2000
+Ns 30
+d 1.0000
+
+newmtl blush_pink
+Kd 0.8879 0.3864 0.3968
+Ks 0.2000 0.2000 0.2000
+Ns 20
+d 1.0000
+
+newmtl eye_dark
+Kd 0.0423 0.0296 0.0369
+Ks 0.2000 0.2000 0.2000
+Ns 130
+d 1.0000
+
+newmtl eye_shine
+Kd 1.0000 1.0000 1.0000
+Ks 0.2000 0.2000 0.2000
+Ns 140
+d 1.0000
+
