@@ -1,0 +1,37 @@
+{
+  "shots": [
+    [
+      174,
+      5.3,
+      "Outdoor exploration"
+    ],
+    [
+      98,
+      5.3,
+      "Therapy room"
+    ],
+    [
+      125.2,
+      5.3,
+      "AI companion"
+    ],
+    [
+      281,
+      3.3,
+      "Second companion"
+    ],
+    [
+      181,
+      4.3,
+      "Garden wildlife"
+    ],
+    [
+      223.3,
+      8,
+      "Aurora"
+    ]
+  ],
+  "transition_seconds": 0.3,
+  "audio_source_start": 223.3,
+  "duration": 30
+}

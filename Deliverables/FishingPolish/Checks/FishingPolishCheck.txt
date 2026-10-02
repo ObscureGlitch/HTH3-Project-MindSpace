@@ -1,0 +1,5 @@
+PASS: fishing polish verified.
+PASS: all 10,000 weighted outcomes match eight documented koi odds; Godly Kigoi is rarest at 25/10,000 (0.25%). All six tiers resolve correctly.
+PASS: legacy catches without a rarity field resolve tiers without file rewrites; new rarity and equipped choices persist. Real player saves were not opened.
+PASS: thumb points toward rod tip, reel/wrist below the palm; smooth cast boundaries; all eight original koi lift from below water into view and clean up without colliders; fishing UI has no filled panels/fullscreen dimming.
+Pending: GPU transparent/spinning preview check and manual Play UI/input check.

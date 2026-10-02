@@ -1,0 +1,3 @@
+PASS: all 24 actual Unity collection previews rendered with visible geometry and transparent corners; eighteen degrees per second spin, 30 Hz throttle and immediate close cleanup.
+PASS: four actual catch reveals rendered over the existing pond scenery, including Sakura petals, dragon appendages, moon and rainbow Godly effects.
+No Play mode, real saves, microphone or webcam were used. Live input/UI appearance and sustained frame-rate checks remain manual.

@@ -6,16 +6,25 @@ namespace TheLastWatch.Environment
     [DisallowMultipleComponent]
     public sealed class WellnessGardenPerformance : MonoBehaviour
     {
-        private int previousRate, previousVsync;
+        [Range(60, 240)] public int targetFrameRate = 120;
+        private int previousRate, previousVsync, appliedRate;
+        private bool applied;
         private void OnEnable()
         {
+            if (!Application.isPlaying) return;
             previousRate = Application.targetFrameRate; previousVsync = QualitySettings.vSyncCount;
-            QualitySettings.vSyncCount = 0; Application.targetFrameRate = 30;
+            appliedRate = Mathf.Clamp(targetFrameRate, 60, 240);
+            // Desktop players follow the display refresh rate without tearing.
+            // The editor ignores vSync, so also give its Game view a sensible ceiling.
+            QualitySettings.vSyncCount = 1; Application.targetFrameRate = appliedRate;
+            applied = true;
         }
         private void OnDisable()
         {
-            if (Application.targetFrameRate == 30) Application.targetFrameRate = previousRate;
-            if (QualitySettings.vSyncCount == 0) QualitySettings.vSyncCount = previousVsync;
+            if (!applied) return;
+            if (Application.targetFrameRate == appliedRate) Application.targetFrameRate = previousRate;
+            if (QualitySettings.vSyncCount == 1) QualitySettings.vSyncCount = previousVsync;
+            applied = false;
         }
     }
 }

@@ -1,0 +1,5 @@
+PASS: actual door controller queues blocked opening and closing, retains motion while waiting, accepts reversal, resumes and finishes when the companion clears, and still rejects a player in the swing. Disabled companion colliders are ignored.
+PASS: 4 doorway positions have a short clear retreat on the existing navmesh, on the same side of the entrance, outside the complete door swing.
+PASS: both companion collider/movement/door references linked. Existing saved scene and navigation asset retained.
+Runtime movement, Stay/Follow modes and timing still require a Play-mode check.
+Verified 2026-09-30T01:43:10

@@ -1,0 +1,10 @@
+PASS: koi fishing installed.
+PASS: 90 seeded catch simulations at 30/60/120 Hz; bounded fish/bar/progress, missed bites, poor reeling, cancellation, one-time claim and invalid-time rejection.
+PASS: local catch save/reload, equip/change/put-away persistence, duplicate protection, safe GUID paths, corrupt-record tolerance and capacity protection. Real player saves were not opened or altered.
+PASS: 4 real-scene shoreline approaches and bridge casting, dry-deck/rock rejection, valid water landing, facing-away and remote-distance rejection.
+PASS: all 8 installed koi varieties reusable for catches and equip; original meshes/parts/materials retained, small size variation, no rod/float/held-fish colliders.
+PASS: existing player/pond/menu references saved; no permanent rod renderer, camera or collider, and no change to koi population, pond material or saved player view.
+Controls: F cast/cancel; Space hook, hold/tap to lift catch bar, release to lower; I inventory and equip; Esc close/cancel.
+Data: local persistentDataPath/MindSpaceFishing, koi records committed individually; 500-catch capacity, no auto-deletion, no network, webcam, microphone or AI calls.
+Pending: actual Play input, visuals and lifecycle test.
+Backup: D:\Unity\HTH3 Project\TherapyBackups\Fishing\20260930-194719-779

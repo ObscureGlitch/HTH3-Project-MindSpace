@@ -1,0 +1,8 @@
+PASS: runtime C# compiled; pond shader pass compiled.
+PASS: impulse propagation, damped settling, dry boundary, bounded heights and small-grid CFL stress.
+Peak displacement: 0.05010581 m; remote wave: 0.002010436 m; final/early energy: 0.
+Runtime appearance and reflection performance still require visual validation.
+Active solver benchmark: 0.4963 ms/step (600 steps). 64x64 at 30 Hz; maximum two catch-up steps; reflection 256x256 at 8 Hz moving / 2 Hz stationary.
+PASS: authored mesh initialization, wet mask, two overlapping impacts, scene reflection render request and offscreen camera capture.
+Preview: D:/Hack the Hill/Deliverables/PondWaterValidation/PondPreview.png
+PASS: red/green reflected markers align with mirrored world positions at two camera angles (pixel assertions).

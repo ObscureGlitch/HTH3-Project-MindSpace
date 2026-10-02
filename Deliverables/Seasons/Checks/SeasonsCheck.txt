@@ -1,0 +1,11 @@
+PASS: four seasons installed 2026-09-30T05:01:35
+PASS: 4,004 bounded/continuous seasonal weather samples, loop seams, wetter Spring than Summer, snow labeling, real cycle timing/order, manual hold, eight-second transition and invalid-time rejection.
+PASS: actual scene palette capture/apply/restore: winter ground, bare branches, vegetation dormancy, insect suppression, every Spring/Fall surface color and full Summer recovery. Shared source assets never recolored.
+PASS: 33 outdoor renderers bound; 11 dormant vegetation renderers; 120 actual mesh crowns supply leaf fall and winter branch silhouettes without unbatching the forest.
+PASS: shared runtime palette per source material/role, eight-second transitions, automatic Spring/Summer/Fall/Winter cycle (24 real minutes per season by default), manual hold and 5–60 minute duration settings.
+PASS: terrain/apron, leafy trees, evergreen trees, grasses, flowers, paths, rocks and distant scenery palettes covered. Summer preserves original palette. Indoor assets/materials are excluded.
+PASS: winter replaces rain particles with snow (same 600-particle system); leaf fall uses one 80-particle system; bare branches are one combined mesh. No added collider, camera, navigation change, pond freeze or fish change.
+PASS: original terrain mesh, pond material and cloud-family mode retained. All runtime material and visibility changes restore on disable.
+Settings: Sky & weather → Seasons. Snow can be requested in Weather while Winter is selected. Rain/snow strength uses Precipitation.
+Pending: visual/GPU/input checks in Play. No Play, microphone, webcam or voice connection started.
+Backup: D:\Unity\HTH3 Project\TherapyBackups\Seasons\20260930-050133-691

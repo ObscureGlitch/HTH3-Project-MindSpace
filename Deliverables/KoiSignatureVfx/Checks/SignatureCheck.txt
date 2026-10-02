@@ -1,0 +1,19 @@
+PASS: twelve unique species signatures; all twelve lower-tier models have no aura in Catch, Held or Collection.
+PASS: 36 effect presentations, <=1024 quads, valid bounds/colors at reveal/long-running/invalid times, one renderer, 30 Hz cap, hidden pause, compact held scale and complete disposal.
+PASS: every Godly signature has more persistent detail than the most detailed Legendary. Legacy stored Godly rarity preserved.
+tancho / Crimson crane / Legendary: 163 quads, primary RGBA(1.320, 0.070, 0.160, 1.000), secondary RGBA(1.060, 1.020, 0.920, 1.000)
+ryujin / Dragonfire helix / Legendary: 152 quads, primary RGBA(1.500, 0.150, 0.030, 1.000), secondary RGBA(1.400, 0.830, 0.060, 1.000)
+raijin / Thunderstorm coils / Legendary: 92 quads, primary RGBA(0.100, 0.880, 1.400, 1.000), secondary RGBA(0.550, 0.270, 1.250, 1.000)
+hoo / Phoenix plumage / Legendary: 198 quads, primary RGBA(1.400, 0.400, 0.025, 1.000), secondary RGBA(1.450, 0.940, 0.080, 1.000)
+yuki / Crystal frostfall / Legendary: 187 quads, primary RGBA(0.720, 1.100, 1.300, 1.000), secondary RGBA(1.140, 1.190, 1.220, 1.000)
+abyss / Bioluminescent depths / Legendary: 213 quads, primary RGBA(0.040, 1.140, 0.820, 1.000), secondary RGBA(0.100, 0.630, 0.900, 1.000)
+nebula / Spiral nebula / Legendary: 186 quads, primary RGBA(0.720, 0.210, 1.300, 1.000), secondary RGBA(1.200, 0.240, 0.750, 1.000)
+kitsune / Nine spirit flames / Legendary: 145 quads, primary RGBA(0.080, 0.570, 1.400, 1.000), secondary RGBA(0.720, 1.090, 1.280, 1.000)
+amaterasu / Solar ascension / Godly: 356 quads, primary RGBA(1.600, 0.910, 0.120, 1.000), secondary RGBA(1.500, 0.280, 0.020, 1.000)
+tsukuyomi / Lunar procession / Godly: 284 quads, primary RGBA(0.640, 0.710, 1.400, 1.000), secondary RGBA(1.020, 1.110, 1.350, 1.000)
+void / Event horizon / Godly: 460 quads, primary RGBA(0.620, 0.090, 1.400, 1.000), secondary RGBA(1.070, 0.270, 0.930, 1.000)
+genesis / Prismatic creation / Godly: 502 quads, primary RGBA(1.400, 0.340, 0.690, 1.000), secondary RGBA(0.180, 1.250, 0.760, 1.000)
+PASS: exhaustive baseline and focused weighted outcomes; 24 positive chances, Godly highest tier, Genesis rarest (0.05% baseline); free focus multiplies only selected weight by three, displayed normalized odds match.
+PASS: 216 high-rarity feedback-player wins across six movement styles at 30/60/120 Hz; clean/late/missed hooks, no-input escape, cancel, finite bounds and exactly-one claim.
+PASS: all sixteen new species persist, equipped Genesis and catch quality reload; old explicit Godly rarity and original save bytes untouched; journal/XP/bests rebuild without rewards on repeated opening; corrupt and duplicate records handled. Real saves were not opened.
+PASS: all 24 catches lift from water; 36 effect presentations sampled across reveal/held/collection, bounded at 1,024 quads and 30 Hz, one renderer per effect, no particle GameObjects/lights/colliders; full cleanup.

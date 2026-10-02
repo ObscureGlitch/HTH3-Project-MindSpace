@@ -1,0 +1,9 @@
+PASS: player photo camera and local inventory installed 2026-09-30T03:54:29
+PASS: real PNG/JPEG/metadata save, inventory reload, photo decoding and exact PNG colors; duplicate protection, path validation, corrupt-metadata tolerance and full-album protection.
+PASS: true optical 1–4x zoom at five base FOVs; bounded aspect-preserving capture at five screen sizes.
+PASS: existing gameplay camera/menu/chat/HUD references saved; no added camera, renderer, provider, shader or webcam access. Existing camera pose/FOV unchanged.
+Controls: C camera, wheel 1–4x zoom, click/Space capture, G inventory, Escape back/close. Inventory also accessible from pause Controls.
+Photos: persistentDataPath/MindSpacePhotos, full PNG at up to 1920x1080, 320px JPEG thumbnails, metadata committed last. 200-photo safe capacity; no automatic deletion.
+Performance: no capture work while idle; one capture at a time; GPU readback when supported; six thumbnails per page plus one opened photo; textures released on close.
+Not yet verified: actual GPU screenshot/orientation, visual layout, live keyboard/mouse input and Play-mode lifecycle. No Play, microphone or webcam was started.
+Backup: D:\Unity\HTH3 Project\TherapyBackups\PhotoCamera\20260930-035429-262

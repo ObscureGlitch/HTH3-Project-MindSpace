@@ -1,0 +1,56 @@
+[
+  {
+    "source": "C:\\Users\\obscu\\Downloads\\Demo7.png",
+    "output": "A-Sunny-Pond.png",
+    "width": 1375,
+    "height": 760,
+    "sourceSHA256": "23a50ea14227b6751377742272bf53697069fc40eb236ded5685ef91eb640888",
+    "originalUnchanged": true,
+    "changedPixels": 128321,
+    "unchangedPixels": 916679,
+    "titleAlphaCoveredPixels": 128535,
+    "changesOutsideTitle": 0,
+    "titlePlacement": {
+      "x": 190,
+      "y": 206,
+      "width": 940,
+      "height": 316
+    }
+  },
+  {
+    "source": "C:\\Users\\obscu\\Downloads\\Demo6.png",
+    "output": "B-Northern-Lights.png",
+    "width": 1368,
+    "height": 747,
+    "sourceSHA256": "b05728df35ff1c239826762573f9e417631663f51051134aea4d77d0e51c9eb4",
+    "originalUnchanged": true,
+    "changedPixels": 75353,
+    "unchangedPixels": 946543,
+    "titleAlphaCoveredPixels": 79655,
+    "changesOutsideTitle": 0,
+    "titlePlacement": {
+      "x": 58,
+      "y": 66,
+      "width": 740,
+      "height": 249
+    }
+  },
+  {
+    "source": "C:\\Users\\obscu\\Downloads\\Demo8.png",
+    "output": "C-Companion-Cabin.png",
+    "width": 1369,
+    "height": 757,
+    "sourceSHA256": "b4c04279fd828a76fcba9662db4d2aca2faefc3c340d0ec5c1a02664b878702a",
+    "originalUnchanged": true,
+    "changedPixels": 55348,
+    "unchangedPixels": 980985,
+    "titleAlphaCoveredPixels": 57682,
+    "changesOutsideTitle": 0,
+    "titlePlacement": {
+      "x": 44,
+      "y": 35,
+      "width": 630,
+      "height": 212
+    }
+  }
+]

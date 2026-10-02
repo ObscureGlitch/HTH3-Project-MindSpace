@@ -1,0 +1,1 @@
+PASS: final Runtime and Editor source compiled by Unity; all effect shader variants used by the GPU previews compiled.

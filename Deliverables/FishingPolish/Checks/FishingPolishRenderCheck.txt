@@ -1,0 +1,2 @@
+PASS: revised grip/cast and water-to-view catch keyframes rendered using original koi meshes; inventory preview has an alpha-transparent background and visible fish, spins at 18 degrees/second, throttles rendering and stops/releases on close.
+Pending: live Play UI/input check.

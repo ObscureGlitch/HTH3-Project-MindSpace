@@ -1,0 +1,596 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 18496)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 20268)
+VBCSCompiler prewarm took 65.24 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.3f1 (45d8eee7de74) revision 4577518'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-obscu" at "2026-09-30T23:57:09.9353285Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 15182 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-09-30T23:57:09Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 13088, path: "D:/Unity/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              7dad9c95c5a74fc69492adc4ddcbae12
+  Correlation Id:          9e0b16346ac2c644471135d41f0f4599
+  External correlation Id: 2766125143473959759
+  Machine Id:              TExqC4bzIoEipys504spRup1M8I=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-obscu" (connect: 0.00s, validation: 0.00s, handshake: 0.14s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-obscu-notifications" at "2026-09-30T23:57:10.0781661Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 2476054553666-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.16s
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\6000.6.3f1\Editor\Unity.exe
+-batchmode
+-nographics
+-projectPath
+D:\Unity\HTH3 Project
+-executeMethod
+TherapyGame.Editor.SeasonalDetailsSetup.InstallBatch
+-logFile
+D:\Hack the Hill\Deliverables\SeasonalDetails\Checks\Unity-Install.log
+Successfully changed project path to: D:\Unity\HTH3 Project
+D:/Unity/HTH3 Project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [25424]  Target information:
+
+Player connection [25424]  * "[IP] 10.194.250.158 [Port] 55504 [Flags] 2 [Guid] 4237713684 [EditorId] 4237713684 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-IUN5378O) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25424] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25424] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-24864" after 0.7 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - D:/Unity/6000.6.3f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = D:/Unity/HTH3 ProjectActive build profile path: `Assets/Settings/Build Profiles/Windows.asset`
+Unity Data Store running and initialised
+Got setting from build profile YAML, name `m_BuildTarget`, value `19`
+Got setting from build profile YAML, name `m_Subtarget`, value `2`
+Refreshing native plugins compatible for Editor in 2.13 ms, found 0 plugins.
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.3f1 (45d8eee7de74)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path D:/Unity/6000.6.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/HTH3 Project/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'D:/Unity/6000.6.3f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/6000.6.3f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'D:/Unity/6000.6.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/6000.6.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/6000.6.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003673 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.884 seconds
+Domain Reload Profiling: 3339ms
+	BeginReloadAssembly (394ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (48ms)
+	initialDomainReloadingComplete (189ms)
+	LoadAllAssembliesAndSetupDomain (809ms)
+		LoadAssemblies (374ms)
+		TypeCache.Refresh (548ms)
+			TypeCache.ScanAssembly (514ms)
+		AnalyzeDomain (2ms)
+	FinalizeReload (1887ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (5ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (283ms)
+			ProcessInitializeOnLoadAttributes (353ms)
+			ProcessInitializeOnLoadMethodAttributes (672ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 66 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ai.assistant@2.20.0-pre.1 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.ai.assistant@ceb45b7b3ebd)
+    com.unity.ai.inference@2.6.1 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.ai.inference@9a123aee5df7)
+    com.unity.ai.navigation@2.0.14 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.ai.navigation@134dd6a3b97b)
+    com.unity.collab-proxy@2.13.6 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.0.38 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.20.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.visualscripting@1.9.12 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.visualscripting@4edfcc09512f)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.dt.app-ui@2.1.11 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.dt.app-ui@cd5609b130ce)
+    com.unity.nuget.mono-cecil@1.11.6 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.searcher@4.9.5 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.profiling.core@1.0.3 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.6.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.render-pipelines.universal@327d93d1cbc8)
+    com.unity.test-framework@1.8.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.test-framework@80f691d4262b)
+    com.unity.timeline@6.6.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.timeline@c56d56b0070b)
+    com.unity.ugui@2.6.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.ugui@0727b404f3a0)
+    com.unity.modules.accessibility@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+    com.unity.render-pipelines.core@17.6.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.render-pipelines.core@02d75770e4b3)
+    com.unity.shadergraph@17.6.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.shadergraph@1dd0fd24b57e)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.burst@2.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.collections@10fff0607388)
+    com.unity.2d.sprite@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.2d.sprite@26bcb5e737a2)
+    com.unity.mathematics@1.4.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.mathematics@8306a64d0cd6)
+    com.unity.graph-authoring@1.0.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.test-framework.performance@6.6.0 (location: D:\Unity\HTH3 Project\Library\PackageCache\com.unity.test-framework.performance@b6023decb532)
+  Embedded packages:
+    io.elevenlabs.agents@file:D:\Unity\HTH3 Project\Packages\io.elevenlabs.agents (location: D:\Unity\HTH3 Project\Packages\io.elevenlabs.agents)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.06 seconds
+Assets/StreamingAssets/TherapyGame/PresageBridge/node_modules/@smartspectra/node-sdk is a symbolic link. Using symlinks in Unity projects may cause your project to become corrupted if you create multiple references to the same asset, use recursive symlinks or use symlinks to share assets between projects used with different versions of Unity. Make sure you know what you are doing.
+Disabling directory monitoring for current editor session. Found symlinks in project which cannot be used with directory monitoring. Directory monitoring settings can be changed in preferences.
+AcceleratorClientConnectionCallback - disconnected - :0
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Refreshing native plugins compatible for Editor in 11.19 ms, found 5 plugins.
+Starting: D:\Unity\6000.6.3f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/Unity/HTH3 Project
+DisplayProgressbar: Compiling Scripts
+Starting: D:\Unity\6000.6.3f1\Editor\Data\DotNetSdk\dotnet.exe "D:\Unity\6000.6.3f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/Unity/HTH3 Project
+ExitCode: 4 Duration: 3s278ms
+[1256/1666  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[1650/1666  2s] Csc Library/Bee/artifacts/1900b0aE.dag/TherapyGame.Runtime.dll (+2 others)
+Assets\TherapyGame\Runtime\ThirdParty\uLipSync\Profile.cs(27,31): warning UAC1001: Field 'mfccNativeArray' type 'Unity.Collections.NativeArray<float>' is skipped by serialization (missing the [Serializable] attribute). Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1001)
+*** Tundra requires additional run (3.17 seconds), 2 items updated, 1649 evaluated
+ExitCode: 0 Duration: 4s29ms
+Starting: D:\Unity\6000.6.3f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/Unity/HTH3 Project
+ExitCode: 0 Duration: 8s429ms
+Finished compiling graph: 1670 nodes, 36625 flattened edges (30217 ToBuild, 276 ToUse), maximum node priority 1890
+[ 849/1666  0s] WriteText Library/Bee/artifacts/1900b0aE.dag/TherapyGame.Editor.rsp
+[1257/1666  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1651/1666  1s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/TherapyGame.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/TherapyGame.Runtime.dll, with 151 defines and 313 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1652/1666  0s] CopyFiles Library/ScriptAssemblies/TherapyGame.Runtime.pdb
+[1653/1666  0s] CopyFiles Library/ScriptAssemblies/TherapyGame.Runtime.dll
+[1654/1666  2s] Csc Library/Bee/artifacts/1900b0aE.dag/TherapyGame.Editor.dll (+2 others)
+Assets\TherapyGame\Editor\SeasonalDetailsSetup.cs(42,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\TherapyGame\Editor\SeasonalDetailsSetup.cs(169,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\TherapyGame\Editor\SeasonalDetailsSetup.cs(231,33): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\TherapyGame\Editor\TherapyRealismUpgrade.cs(104,84): warning CS0618: 'LightingSettings.Lightmapper.ProgressiveCPU' is obsolete: 'Lightmapper.ProgressiveCPU is deprecated, use Lightmapper.UnityComputeGPU instead.'
+[1655/1666  1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[1656/1666  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[1657/1666  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 151 defines and 384 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[1658/1666  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[1659/1666  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[1660/1666  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 149 defines and 407 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[1661/1666  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[1662/1666  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[1663/1666  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/TherapyGame.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/TherapyGame.Editor.dll, with 149 defines and 322 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[1664/1666  0s] CopyFiles Library/ScriptAssemblies/TherapyGame.Editor.pdb
+[1665/1666  0s] CopyFiles Library/ScriptAssemblies/TherapyGame.Editor.dll
+*** Tundra build success (8.35 seconds), 17 items updated, 1666 evaluated
+Assets\TherapyGame\Runtime\ThirdParty\uLipSync\Profile.cs(27,31): warning UAC1001: Field 'mfccNativeArray' type 'Unity.Collections.NativeArray<float>' is skipped by serialization (missing the [Serializable] attribute). Refer to the Serialization rules analyzer reference. (https://docs.unity3d.com/6000.6/Documentation/Manual/script-serialization-analyzer.html#uac1001)
+Assets\TherapyGame\Editor\SeasonalDetailsSetup.cs(42,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\TherapyGame\Editor\SeasonalDetailsSetup.cs(169,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\TherapyGame\Editor\SeasonalDetailsSetup.cs(231,33): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\TherapyGame\Editor\TherapyRealismUpgrade.cs(104,84): warning CS0618: 'LightingSettings.Lightmapper.ProgressiveCPU' is obsolete: 'Lightmapper.ProgressiveCPU is deprecated, use Lightmapper.UnityComputeGPU instead.'
+Total cache size 268296782
+Total cache size after purge 268296782, took 00:00:01.3414396
+AssetDatabase: script compilation time: 19.120047s
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Importing 'GUID: 4e63ee7b718134446a6e5a5a54eb8712 - Path: Assets/TherapyGame/Exterior/SeasonalDetails' with importer (DefaultImporter)
+Imported 'GUID: 4e63ee7b718134446a6e5a5a54eb8712' -> (Import Result ID: '54889a26417fe84457a5db0fcc2b34f6') in 0.059 seconds [static dependencies only]. Details - ImportResultOutputID=2ab2d67046f7c8c144ce8d6568cfdf09 DependenciesID=df94c751fb02373c39ac794581894b98 StaticDependenciesID=244d5bb3d5e5a68b17d5b353ea39c890 
+Refreshing native plugins compatible for Editor in 11.60 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 10.43 ms, found 5 plugins.
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  5.133 seconds
+Domain Reload Profiling: 8722ms
+	BeginReloadAssembly (697ms)
+		DisableScriptedObjects (67ms)
+		CreateAndSetChildDomain (101ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (43ms)
+	initialDomainReloadingComplete (292ms)
+	LoadAllAssembliesAndSetupDomain (2533ms)
+		LoadAssemblies (1272ms)
+		TypeCache.Refresh (918ms)
+			TypeCache.ScanAssembly (871ms)
+		AnalyzeDomain (250ms)
+			BuildScriptInfoCaches (226ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (5135ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (4ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (427ms)
+			ProcessInitializeOnLoadAttributes (2799ms)
+			ProcessInitializeOnLoadMethodAttributes (709ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (4ms)
+		AwakeInstancesAfterBackupRestoration (74ms)
+Starting new worker id: 0 with log in D:/Unity/HTH3 Project/Logs/AssetImportWorkerHW0.log
+Importing 'GUID: 83544c11ab16c4a4d9e1a7f783da95e5 - Path: Assets/TherapyGame/Exterior/SeasonalDetails/SeasonalDetails.shader' with importer (ShaderImporter)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Imported 'GUID: 83544c11ab16c4a4d9e1a7f783da95e5' -> (Import Result ID: '09e8985ce0ba054523492eb5dbab44fa') in 0.294 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f352241bb6010268ec24a53f35805c47 DependenciesID=306c4d40db92f69cc5fa76ee943091a3 StaticDependenciesID=25b05c5236b96304b8edb176c31b2279 
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 10.79 ms, found 5 plugins.
+
+Asset Pipeline Refresh (id=9d28253d89a5fbb45a6fdc400b970a25): Total: 33.258 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=8 ms, native=7783 ms
+		Asset DB Callback time: managed=2028 ms, native=198 ms
+		Scripting: domain reloads=1, domain reload time=3858 ms, compile time=19125 ms, other=255 ms
+		Project Asset Count: scripts=2315, non-scripts=6427
+		Asset File Changes: new=4, changed=12, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 79.883ms
+	ApplyChangesToAssetFolders: 2.697ms
+	Scan: 938.106ms
+	Collect global state as custom dependencies: 44.938ms
+	OnSourceAssetsModified: 3.057ms
+	CategorizeScriptCompilationAssets: 156.343ms
+	ProcessAssetsWithTransientArtifactChanges: 268.931ms
+	CategorizeAssets: 237.184ms
+	CompileScripts: 19125.164ms
+	ImportOutOfDateAssets: 5590.967ms (5175.411ms without children)
+		ImportManagerImport: 365.644ms (10.137ms without children)
+			UpdateCategorizedAssets: 0.586ms
+		ReloadNativeAssets: 0.098ms
+		UnloadImportedAssets: 1.803ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 2.866ms
+		ImportSchedulerStart: 45.125ms
+	PostProcessAllAssets: 2135.188ms
+		ShaderAssetModifiedCallback 102.992ms
+		XRBuildSystem.XRAssetImported 2.276ms
+		VersionControlSettings.HiddenFilePostprocess 0.283ms
+		PostProcessCallbackCreateDeferredMaterials 0.201ms
+		ComputeShaderImportPostprocess 0.141ms
+		RaytracingShaderImportPostprocess 0.069ms
+		MonoPostProcessAllAssets: 2026.510ms
+			SyncVS.PostprocessSyncProject 620.746ms
+			AssetPostprocessor.OnPostprocessAllAssets 548.887ms
+			AssetReferenceReimportMonitor.OnPostprocessAllAssets 82.525ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 51.004ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 46.124ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 38.141ms
+			GraphRefreshPostprocessor.OnPostprocessAllAssets 6.894ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 6.267ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 5.608ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 5.458ms
+			AssetChangedListener.OnPostprocessAllAssets 4.482ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.477ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.887ms
+			MaterialPostprocessor.OnPostprocessAllAssets 2.623ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 2.279ms
+			AssetChangeDetector.OnPostprocessAllAssets 2.266ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 2.140ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 1.654ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 1.453ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 1.241ms
+			PostProcessor.OnPostprocessAllAssets 1.234ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 1.203ms
+			SkillsProjectAssetPostprocessor.OnPostprocessAllAssets 1.198ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 1.161ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.924ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.916ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.877ms
+			ModelAssetProcessor.OnPostprocessAllAssets 0.758ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.748ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.745ms
+			AssetEvents.OnPostprocessAllAssets 0.586ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.561ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.524ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.503ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.452ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.448ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.363ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.363ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.355ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.253ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.197ms
+			TrackSelectedAssetsProcessor.OnPostprocessAllAssets 0.160ms
+	PostAssetChangesProfiler: 17.582ms
+	UnloadStreamsBegin: 4.616ms
+	PersistCurrentRevisions: 0.770ms
+	GenerateScriptTypeHashes: 4.136ms
+	GenerateScriptTypeSerializationHashes: 7.817ms
+	Untracked: 4585.892ms
+
+Application.AssetDatabase Initial Refresh End
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Scanning for USB devices : 2.572ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-HTH3 Project
+Unloading 105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10505 unused Assets / (8.6 MB). Loaded Objects now: 11474.
+Memory consumption went from 0.55 GB to 0.54 GB.
+Total: 49.677800 ms (FindLiveObjects: 1.994500 ms CreateObjectMapping: 1.169800 ms MarkObjects: 39.340400 ms  DeleteObjects: 6.416700 ms)
+
+Opening scene 'Assets/TherapyGame/Scenes/TherapyRoom.unity'
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+LightingSettings: switching bake backend from 2 to 1.
+Loaded scene 'Assets/TherapyGame/Scenes/TherapyRoom.unity'
+	Deserialize:            246.395 ms
+	Integration:            950.297 ms
+	Integration of assets:  9.029 ms
+	Thread Wait Time:       0.394 ms
+	Total Operation Time:   1206.115 ms
+Unloading 12 unused Assets / (0.6 MB). Loaded Objects now: 16590.
+Memory consumption went from 0.60 GB to 0.60 GB.
+Total: 45.267800 ms (FindLiveObjects: 2.026900 ms CreateObjectMapping: 0.467300 ms MarkObjects: 41.678400 ms  DeleteObjects: 0.138200 ms)
+
+Worker ready: AssetImportWorkerHW0 0
+Importing 'GUID: 360d0d369779a97478e1a0eaa0c189dc - Path: Assets/TherapyGame/Exterior/SeasonalDetails/SeasonalDetails.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 360d0d369779a97478e1a0eaa0c189dc' -> (Import Result ID: 'b419c2b91277b800bbc1f58c016acfec') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=8a4bff32f6b68917d4cfcb4e58f69a91 DependenciesID=faac933ae2ee27c0fea582ec76f03154 StaticDependenciesID=ea95f1a37e33c393ff5c14a4dab86956 
+Refreshing native plugins compatible for Editor in 10.25 ms, found 5 plugins.
+
+Asset Pipeline Refresh (id=941908fdbee46e54985ce77b14f9dc7f): Total: 0.335 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=296 ms
+		Asset DB Callback time: managed=13 ms, native=25 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=2315, non-scripts=6428
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 5
+	ApplyChangesToAssetFolders: 0.522ms
+	Scan: 63.492ms
+	Collect global state as custom dependencies: 1.840ms
+	OnSourceAssetsModified: 1.484ms
+	ProcessAssetsWithTransientArtifactChanges: 0.273ms
+	CategorizeAssets: 158.503ms
+	ImportOutOfDateAssets: 10.314ms (1.133ms without children)
+		ImportManagerImport: 5.905ms (1.415ms without children)
+		ReloadNativeAssets: 0.682ms
+		UnloadImportedAssets: 0.264ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.657ms
+		ImportSchedulerStart: 0.660ms
+	PostProcessAllAssets: 25.321ms
+		XRBuildSystem.XRAssetImported 14.015ms
+		MonoPostProcessAllAssets: 11.069ms
+			AssetPostprocessor.OnPostprocessAllAssets 5.190ms
+			SyncVS.PostprocessSyncProject 3.075ms
+			MaterialPostprocessor.OnPostprocessAllAssets 0.819ms
+			ModelAssetProcessor.OnPostprocessAllAssets 0.135ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.114ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 0.102ms
+			GraphRefreshPostprocessor.OnPostprocessAllAssets 0.095ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.092ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 0.053ms
+	PostAssetChangesProfiler: 11.440ms
+	GatherAllCurrentPrimaryImportResultRevisions: 2.957ms
+	UnloadStreamsBegin: 2.360ms
+	PersistCurrentRevisions: 0.643ms
+	UnloadStreamsEnd: 0.053ms
+	Untracked: 22.703ms
+
+Importing 'GUID: 9dea43d7493fb034699296b7a1cd3ad2 - Path: Assets/TherapyGame/Exterior/SeasonalDetails/Spring_wildflowers0.asset' with importer (NativeFormatImporter)
+Imported 'GUID: 9dea43d7493fb034699296b7a1cd3ad2' -> (Import Result ID: '31f6286f89eea34806e382223419b9c2') in 0.017 seconds [static dependencies only]. Details - ImportResultOutputID=23613b3ab79bb439931180ce98139f6b DependenciesID=a2622a97f86038ebc04e2a3e2668c238 StaticDependenciesID=c5fa3ee9fe8b051a1f901a280f4f1f65 
+Refreshing native plugins compatible for Editor in 11.27 ms, found 5 plugins.
+Asset Pipeline Refresh (id=6ec654113b5fd5b4d89f14244108e665): Total: 0.154 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: c016763fd79e92d439203728b266cc15 - Path: Assets/TherapyGame/Exterior/SeasonalDetails/Spring_wildflowers1.asset' with importer (NativeFormatImporter)
+Imported 'GUID: c016763fd79e92d439203728b266cc15' -> (Import Result ID: 'b5e20271f0c5588fad7fef9681055d7d') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=cf6e6001677696de30514e0fccf8eeca DependenciesID=bf299a525e3d328466d91b28f94afcb3 StaticDependenciesID=462df9bef1fbeaa586eda5bb9c9a777f 
+Refreshing native plugins compatible for Editor in 9.07 ms, found 5 plugins.
+Asset Pipeline Refresh (id=37403855669a67e4f82d362e098e764f): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: aef8a86990b6e034b9b1fcd0829f6fbb - Path: Assets/TherapyGame/Exterior/SeasonalDetails/Spring_wildflowers2.asset' with importer (NativeFormatImporter)
+Imported 'GUID: aef8a86990b6e034b9b1fcd0829f6fbb' -> (Import Result ID: 'c412e2c8b12161e6b2b2c0897b7a2e07') in 0.007 seconds [static dependencies only]. Details - ImportResultOutputID=3109b7522900157d7d24179de2a0ac2f DependenciesID=8bb3400125540cb6a78c2dc160b36e79 StaticDependenciesID=c075d704b0b7d4fbe0a678d3da90652f 
+Refreshing native plugins compatible for Editor in 10.95 ms, found 5 plugins.
+Asset Pipeline Refresh (id=c64b2c753919f5b41a419c4d774e43a4): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: b18aef1454f6753438881cd9bf7f5757 - Path: Assets/TherapyGame/Exterior/SeasonalDetails/Spring_wildflowers3.asset' with importer (NativeFormatImporter)
+Imported 'GUID: b18aef1454f6753438881cd9bf7f5757' -> (Import Result ID: '52774f04581dcfa311a66c67bd859557') in 0.010 seconds [static dependencies only]. Details - ImportResultOutputID=dd5bf20ecda03ecd5e8977ee3e89cb8c DependenciesID=111bb004599db90467bb372a1e2ecfa9 StaticDependenciesID=85e2481ba4ea4a0972b4ea498ac18291 
+Refreshing native plugins compatible for Editor in 9.74 ms, found 5 plugins.
+Asset Pipeline Refresh (id=0afecca0ba4e406458c8d5b2aa894bc3): Total: 0.156 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 0e5e9f1fea2717f4cbdc2b3771a7b68f - Path: Assets/TherapyGame/Exterior/SeasonalDetails/Autumn_leaf_litter0.asset' with importer (NativeFormatImporter)
+Imported 'GUID: 0e5e9f1fea2717f4cbdc2b3771a7b68f' -> (Import Result ID: 'fab9577c4857430af7762737ae30ad26') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=fc2043204651acbfd27652234ee2c8f3 DependenciesID=516bbca78f8101e5d0fc0da2a626af24 StaticDependenciesID=b4b5c360a3a10086061531894230c910 
+Refreshing native plugins compatible for Editor in 11.23 ms, found 5 plugins.
+Asset Pipeline Refresh (id=38f162c8391f6bf469067531adf2a6e8): Total: 0.148 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: e5a3d0641e05c0246b01d8cf4ef9862b - Path: Assets/TherapyGame/Exterior/SeasonalDetails/Autumn_leaf_litter1.asset' with importer (NativeFormatImporter)
+Imported 'GUID: e5a3d0641e05c0246b01d8cf4ef9862b' -> (Import Result ID: '953ce0bf6f6be5d25c42623a3d110974') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=682405f0163357e33ef9bd50283ac2b8 DependenciesID=f877c0bf59532a7c807f02b85b1bc0af StaticDependenciesID=87c862d3f82e1d06219c7916be9037d2 
+Refreshing native plugins compatible for Editor in 8.97 ms, found 5 plugins.
+Asset Pipeline Refresh (id=f83834eacb361de4aa211b6363c09784): Total: 0.130 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: cbd065dad217f8d4fa8fe39b46a0a868 - Path: Assets/TherapyGame/Exterior/SeasonalDetails/Autumn_leaf_litter2.asset' with importer (NativeFormatImporter)
+Imported 'GUID: cbd065dad217f8d4fa8fe39b46a0a868' -> (Import Result ID: 'd8bf52fe3c0ec4b9a1e821a257c06c22') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=9382714d974ba04bae8edd3a29e9d651 DependenciesID=e4e13fdc40e1c8ee1160136a8ac2aa07 StaticDependenciesID=9521e6bbe4c93e6c46183ef9d2a2631a 
+Refreshing native plugins compatible for Editor in 9.87 ms, found 5 plugins.
+Asset Pipeline Refresh (id=1f523b8bf229f91429685d25272f2d5a): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 46e0305e57aa5114e94c7cc1521e5a6f - Path: Assets/TherapyGame/Exterior/SeasonalDetails/Autumn_leaf_litter3.asset' with importer (NativeFormatImporter)
+Imported 'GUID: 46e0305e57aa5114e94c7cc1521e5a6f' -> (Import Result ID: '945285706f60bd1e3213e3090f3c4ffb') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=a7a79885f4394692a0e122545c806a48 DependenciesID=191f07144d08289ae720bb6efaf9d03f StaticDependenciesID=cc3cc8bb3ee4c6ffa1105cf2fdaf068a 
+Refreshing native plugins compatible for Editor in 11.10 ms, found 5 plugins.
+Asset Pipeline Refresh (id=d3256095faa165d45a4955d8543c5a56): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: dc88877b7dadcb3488246494bf5b7a58 - Path: Assets/TherapyGame/Exterior/SeasonalDetails/Placements.json' with importer (TextScriptImporter)
+Imported 'GUID: dc88877b7dadcb3488246494bf5b7a58' -> (Import Result ID: '784ebaf1167db1b0c62f5ce2c32b4d87') in 0.019 seconds [static dependencies only]. Details - ImportResultOutputID=45a0c8abf9eeeafbce3bf95618f0cfb1 DependenciesID=840e0395ea4e798fa3b50402e24268d4 StaticDependenciesID=f2db0869c4e5f352be5cff09aee56c0a 
+Refreshing native plugins compatible for Editor in 9.46 ms, found 5 plugins.
+Asset Pipeline Refresh (id=c9e644003718b364c810e5a65d8eca74): Total: 0.166 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 0000000000000000b000000000000000 - Path: ProjectSettings/EditorBuildSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000b000000000000000' -> (Import Result ID: 'd4827db114a63d7288b8bcf417abcc6f') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=0a89a5c5f492143e0fa186859e17ba6f DependenciesID=3da8392e8948ba3d7eaac11a5f2bcdd2 StaticDependenciesID=3d814ff576369d7c8d39e3bc863bad94 
+Refreshing native plugins compatible for Editor in 9.14 ms, found 5 plugins.
+Asset Pipeline Refresh (id=cb6d7e0987568d540a4dc48460b2a6cb): Total: 0.055 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 3ee0018eb0b1ccb47bea81d2cc308aeb - Path: Assets/TherapyGame/Scenes/TherapyRoom.unity' with importer (DefaultImporter)
+Imported 'GUID: 3ee0018eb0b1ccb47bea81d2cc308aeb' -> (Import Result ID: '398bf2ceb4bf4da6a5e8856d48109357') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=055ac46a18b623535cced26f714f7ffa DependenciesID=0a24e0df46bbb05dea2c0df6d02c3a46 StaticDependenciesID=85fe9b73e989d1ccaf639a1c8ce5c6a7 
+Refreshing native plugins compatible for Editor in 9.53 ms, found 5 plugins.
+Asset Pipeline Refresh (id=824bbb5e9a4434240b7fc54716f76076): Total: 0.118 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+PASS: saved seasonal scenery and runtime tests.
+Flowers: 540; ground leaves: 1080; renderers: 8; total triangles: 44748 (only one seasonal set draws at a time).
+Spring: Daylight 13.4h  ·  Sunrise 05:19  ·  Sunset 18:41
+Summer: Daylight 15.4h  ·  Sunrise 04:17  ·  Sunset 19:43
+Fall: Daylight 10.6h  ·  Sunrise 06:41  ·  Sunset 17:19
+Winter: Daylight 8.6h  ·  Sunrise 07:43  ·  Sunset 16:17
+PASS: nearby falling leaves emit, flutter and descend; 27 alive after 4 simulated seconds, cap 80; no particle collision or trails.
+PASS: all four seasonal visibility states; 8-second smooth daylight transition; sunrise/sunset horizon checks; midnight wrap; seasonal night effects; original visibility restored on disable.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TherapyGame.Editor.SeasonalDetailsSetup:Verify () (at Assets/TherapyGame/Editor/SeasonalDetailsSetup.cs:227)
+TherapyGame.Editor.SeasonalDetailsSetup:Install () (at Assets/TherapyGame/Editor/SeasonalDetailsSetup.cs:104)
+TherapyGame.Editor.SeasonalDetailsSetup:Run (string,System.Action) (at Assets/TherapyGame/Editor/SeasonalDetailsSetup.cs:34)
+TherapyGame.Editor.SeasonalDetailsSetup:InstallBatch () (at Assets/TherapyGame/Editor/SeasonalDetailsSetup.cs:26)
+
+(Filename: Assets/TherapyGame/Editor/SeasonalDetailsSetup.cs Line: 227)
+
+MonoPathRemapper: Attempts to remap: 23999; Successful remaps: 92
+Serialized file version minimum: 22, current 23
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-obscu-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-obscu channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+VBCSCompilerPreWarmer: requested VBCSCompiler shutdown
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1790812686883,"processId":24864,"allocatedMemory":20598276,"memoryLabels":[{"Default":217102},{"Permanent":15516},{"NewDelete":72399},{"Thread":4197984},{"Manager":37693},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":848546},{"Material":68},{"GfxDevice":55968},{"Animation":952},{"FreeType":8},{"FontEngine":736},{"Physics":1970},{"Physics2D":16},{"Serialization":23192},{"Input":42840},{"JobScheduler":256},{"TextLib":336},{"Mono":48},{"MonoCode":320},{"ScriptingNativeRuntime":1314896},{"BaseObject":48464},{"Resource":1252},{"Renderer":2376},{"Transform":4685},{"File":16296},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":734136},{"StaticString":3808},{"Utility":2674806},{"Curl":2498},{"PoolAlloc":2840},{"AI":80},{"TypeTree":14973},{"ScriptManager":12656},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7296},{"WebRequest":10012},{"VR":49650},{"SceneManager":608},{"Video":64},{"LazyScriptCache":32},{"Camera":729},{"Secure":2377},{"SerializationCache":9256},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":768},{"Hierarchy":1188},{"UIElements":40},{"CoreStats":14456},{"Identifiers":7152},{"Gui":128},{"EditorUtility":160759},{"VersionControl":8},{"Undo":931},{"AssetDatabase":9541482},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":40441},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":96},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3620},{"Windowing":456},{"Licensing":12757},{"AssetReference":32},{"IPCStream":32}]}

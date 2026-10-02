@@ -1,0 +1,29 @@
+{
+  "Status": "PASS",
+  "Backup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\WinterTreeProportions\\20260930-191050",
+  "SourceTrunksUnchanged": true,
+  "OnlyDormantReferencesChanged": true,
+  "SceneSHA256": "13C69C5AC794AE1883C4AEE9691A842C8748C6158A3368A1F3D1B2DCFF889865",
+  "MeshSHA256": "8AC4B2E4625E929A2D2FE02A6025E161D186F97677E239B7A4B080FBDB561C62",
+  "Files": [
+    {
+      "File": "Editor\\TherapySeasonSetup.cs",
+      "SHA256": "BB895B4F3BACF22E5B8EE359AEFDE0651ED2A1AE4791E0AF25AD9B17DBC1939B"
+    },
+    {
+      "File": "Editor\\WinterTreeGeometry.cs",
+      "SHA256": "FD5FD108AA85C9D33AE370496B308F87487D4B404753CD7FABE7A1707971E736"
+    },
+    {
+      "File": "Editor\\WinterTreePreview.cs",
+      "SHA256": "6472EDEA8D9783FC79228B0EDB35769E3EE0C4CBD932239A0A65F5C5EEFEFDE6"
+    },
+    {
+      "File": "Editor\\WinterTrunkBatch.cs",
+      "SHA256": "BA2971FED045C8EAAE9E3E01F497A3D85118D94FE5C246E66F811E0048837E15"
+    }
+  ],
+  "Preview": "D:\\Hack the Hill\\Deliverables\\Seasons\\Checks\\WinterTreeProportions.png",
+  "Verification": "PASS: lower Winter scaffold branches, short exposed trunks, connected ground-rooted trees, exact evergreen-trunk preservation, saved-mesh reload, seasonal visibility restore, unchanged source trunks/colliders and only winterDormant scene references changed. Edit-mode GPU preview rendered and visually inspected. Interactive Play test pending.",
+  "VerifiedAt": "2026-09-30T19:13:12.9711895-04:00"
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "pieces": 88,
+  "uniqueGeometry": 88,
+  "modelFamilies": 7,
+  "vertices": 51276,
+  "triangles": 17092,
+  "minWaterSurfaceGap": 0.140882,
+  "minFishEnvelopeGap": 0.05119600000000002,
+  "maximumBurial": 0.009000000000000008,
+  "checks": [
+    "Serialized payload finite and correctly indexed",
+    "Triangle winding agrees with stored normals",
+    "All vertices remain below surface",
+    "Low-profile scenery clears fish envelope",
+    "South shallow entry remains clear",
+    "No duplicate geometry signatures"
+  ]
+}

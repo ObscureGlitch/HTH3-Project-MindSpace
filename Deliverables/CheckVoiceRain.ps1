@@ -21,7 +21,7 @@ function Compile-Assembly([string]$name, [string]$sourceDirectory, [string[]]$re
     $argsList.Add('-out:"' + (Join-Path $output "$name.dll") + '"')
     if ($name -like 'TherapyGame.*') {
         $argsList.Add('-unsafe+')
-        foreach ($dependency in @('Unity.Collections','Unity.Mathematics','Unity.Burst')) {
+        foreach ($dependency in @('Unity.Collections','Unity.Mathematics','Unity.Burst','Unity.RenderPipelines.Universal.Runtime','Unity.RenderPipelines.Core.Runtime')) {
             $argsList.Add('-r:"' + (Join-Path $project "Library\ScriptAssemblies\$dependency.dll") + '"')
         }
     }

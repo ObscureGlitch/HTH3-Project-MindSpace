@@ -62,7 +62,7 @@ namespace TheLastWatch.UI
         {
             Color old=GUI.color;GUI.color=new Color(old.r,old.g,old.b,old.a*opacity);
             outlined.fontSize=style.fontSize;outlined.fontStyle=style.fontStyle;outlined.alignment=style.alignment;outlined.wordWrap=style.wordWrap;
-            GUI.Label(new Rect(r.x-1,r.y,r.width,r.height),text,outlined);
+            // One small shadow keeps text readable without a heavy double outline.
             GUI.Label(new Rect(r.x+1,r.y+1,r.width,r.height),text,outlined);
             GUI.Label(r,text,style);GUI.color=old;
         }

@@ -1,0 +1,1 @@
+PASS: all 24 actual model previews, twelve themed signatures, transparent edges/no vertical clipping, 18°/s rotation and 30 Hz preview cap/cleanup. Three labelled effect galleries and twelve actual catch reveal/settled scene renders. No Play mode, real saves, microphone or webcam.

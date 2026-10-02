@@ -1,0 +1,14 @@
+{
+  "Status": "PASS",
+  "OriginalSceneObjects": 3978,
+  "RemovedSceneObjects": 0,
+  "ChangedExistingObjects": [
+    "652317645",
+    "887939353",
+    "650455085",
+    "775736850"
+  ],
+  "AddedSeasonObjects": 11,
+  "InstalledScripts": 6,
+  "Pending": "Visual, GPU and input checks in Play mode"
+}

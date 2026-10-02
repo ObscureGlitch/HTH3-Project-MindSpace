@@ -1,0 +1,4 @@
+PASS: full runtime and editor source compiled against active Unity project references.
+INSTALLED: bounded local-geometry reflections; no additional camera or SRP render request; moderate reflectance; existing water simulation retained.
+PENDING: Unity Assets > Refresh, gameplay-pipeline geometry coverage/alignment tests and warm reflection submission benchmark.
+PENDING: Play-mode FPS/GPU measurements; no claim of zero frame impact.

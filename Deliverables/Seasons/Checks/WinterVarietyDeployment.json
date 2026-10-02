@@ -1,0 +1,47 @@
+{
+  "Status": "PASS",
+  "Backup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\NaturalWinterAndSnow\\20260930-162416",
+  "SceneUnchanged": true,
+  "SceneSHA256": "F58FDAD78D2BBF8F6E6B241551F89823E44FD82AFCBB0D7672C41FADAEC1640C",
+  "MeshSHA256": "38FDD12C7FB95EFDC261748281647F090A6FEC638D95EB971A6D51BE77AECBAA",
+  "Files": [
+    {
+      "File": "Editor\\TherapySeasonSetup.cs",
+      "SHA256": "0F4BC61A6804E236968F9AC48D453326CBAA24A7193CA9C89D0CCE3750E0DC89"
+    },
+    {
+      "File": "Runtime\\WellnessSkyCycle.cs",
+      "SHA256": "9046E53994B13CACC18419F88AF8BF775AA292E82A3BF953D8E1D3D5B2FF2311"
+    },
+    {
+      "File": "Runtime\\WellnessRain.cs",
+      "SHA256": "E1FB7C690518A7701A92A7BA25180D278EAD4C5E686D9A24D83B5B2EA08E1A95"
+    },
+    {
+      "File": "Runtime\\WellnessQuietGlassMenu.cs",
+      "SHA256": "6CBA39BD5F0B4A414C851829D5A5F1CC3B531B5F2DC3EFD55D08EC8DEBE1EB5A"
+    },
+    {
+      "File": "Runtime\\WellnessHud.cs",
+      "SHA256": "8B89E4BC5BC962851815CC930ABFF59B73FAE914F86815814CBA5A6419989CF7"
+    },
+    {
+      "File": "Runtime\\WellnessVoiceChat.cs",
+      "SHA256": "BCB574C64AC8F6081B3FE662213884EEAA2AA03DE2F3E1C0A4EB7887FACCC80B"
+    },
+    {
+      "File": "Runtime\\WellnessUiTheme.cs",
+      "SHA256": "845E44D1087D63CA0B44E18DC04D2D68CA7C56D609F33EF547E2534AAE65F900"
+    },
+    {
+      "File": "Editor\\WinterTreeGeometry.cs",
+      "SHA256": "0501F6B1026E6632546CCFB6CAB8A509A6FB431A53712E7DEF4F186A1F2BA374"
+    },
+    {
+      "File": "Editor\\WinterTreePreview.cs",
+      "SHA256": "CB72C57A6F2C144EB9D0D2C58BDD9C0099FD08AA5DCD04536AF31AE721A4F8DA"
+    }
+  ],
+  "Verification": "PASS: natural per-tree winter geometry, connected bent forks and twigs, saved-mesh reload, explicit Rain/Snow selection and particle switching, palette restoration and unchanged scene hash. Play visual check pending.",
+  "VerifiedAt": "2026-09-30T16:25:48.7997985-04:00"
+}

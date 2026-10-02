@@ -1,0 +1,136 @@
+{
+  "sourceSha256": "102937e386ca4548b902ddc3327a1d9a12fc37c7078af23bef4c4bb69b7ecc05",
+  "sourceBytes": 88194872,
+  "preparedBytes": 11633457,
+  "fish": [
+    {
+      "name": "kujaku",
+      "before": 100544,
+      "after": 6084,
+      "vertices": 4719,
+      "parts": 4,
+      "pointsReplaced": 0
+    },
+    {
+      "name": "kumonryu",
+      "before": 100544,
+      "after": 9516,
+      "vertices": 8774,
+      "parts": 4,
+      "pointsReplaced": 0
+    },
+    {
+      "name": "yurei",
+      "before": 121280,
+      "after": 17322,
+      "vertices": 16136,
+      "parts": 4,
+      "pointsReplaced": 0
+    },
+    {
+      "name": "sakura",
+      "before": 121280,
+      "after": 7416,
+      "vertices": 5828,
+      "parts": 4,
+      "pointsReplaced": 160
+    },
+    {
+      "name": "jade",
+      "before": 100544,
+      "after": 13800,
+      "vertices": 12929,
+      "parts": 4,
+      "pointsReplaced": 0
+    },
+    {
+      "name": "ryujin",
+      "before": 128464,
+      "after": 18423,
+      "vertices": 17311,
+      "parts": 4,
+      "pointsReplaced": 120
+    },
+    {
+      "name": "raijin",
+      "before": 127936,
+      "after": 10524,
+      "vertices": 8479,
+      "parts": 5,
+      "pointsReplaced": 90
+    },
+    {
+      "name": "hoo",
+      "before": 135040,
+      "after": 9120,
+      "vertices": 6438,
+      "parts": 4,
+      "pointsReplaced": 150
+    },
+    {
+      "name": "yuki",
+      "before": 124160,
+      "after": 11654,
+      "vertices": 10244,
+      "parts": 4,
+      "pointsReplaced": 200
+    },
+    {
+      "name": "abyss",
+      "before": 102656,
+      "after": 6926,
+      "vertices": 5663,
+      "parts": 4,
+      "pointsReplaced": 70
+    },
+    {
+      "name": "nebula",
+      "before": 123776,
+      "after": 15890,
+      "vertices": 14702,
+      "parts": 5,
+      "pointsReplaced": 180
+    },
+    {
+      "name": "kitsune",
+      "before": 127904,
+      "after": 9799,
+      "vertices": 7150,
+      "parts": 4,
+      "pointsReplaced": 120
+    },
+    {
+      "name": "amaterasu",
+      "before": 141888,
+      "after": 19474,
+      "vertices": 17986,
+      "parts": 5,
+      "pointsReplaced": 220
+    },
+    {
+      "name": "tsukuyomi",
+      "before": 133376,
+      "after": 8608,
+      "vertices": 6288,
+      "parts": 6,
+      "pointsReplaced": 160
+    },
+    {
+      "name": "void",
+      "before": 135184,
+      "after": 14938,
+      "vertices": 12484,
+      "parts": 5,
+      "pointsReplaced": 150
+    },
+    {
+      "name": "genesis",
+      "before": 137280,
+      "after": 13817,
+      "vertices": 11142,
+      "parts": 6,
+      "pointsReplaced": 220
+    }
+  ],
+  "totalTriangles": 193311
+}

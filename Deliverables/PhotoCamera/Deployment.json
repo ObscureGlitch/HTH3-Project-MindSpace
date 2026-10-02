@@ -1,0 +1,35 @@
+{
+  "Backup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\PhotoCamera\\20260930-034827",
+  "Files": [
+    {
+      "File": "Runtime\\WellnessExplorer.cs",
+      "SHA256": "EF86CBEBFD5C2064E232580843452A86B49E56DD0543FAF646BEEDD46E907E42"
+    },
+    {
+      "File": "Runtime\\WellnessHud.cs",
+      "SHA256": "A7E93F66436341661FDA9E4991E386B86A1665615B912C4D5FD0F7A37D6A38EC"
+    },
+    {
+      "File": "Runtime\\WellnessVoiceChat.cs",
+      "SHA256": "D78DA6633284C3B8D5DB1A550BE2133612C7C4C9067212E0A8FAB3C64C1A5592"
+    },
+    {
+      "File": "Runtime\\WellnessQuietGlassMenu.cs",
+      "SHA256": "D2157A9F0D5E34AF65992EA32014368F3C7B245957EAC85EBFA4A6007295D019"
+    },
+    {
+      "File": "Runtime\\WellnessPhotoCamera.cs",
+      "SHA256": "87735B12EDC8F9AF4CFFAADD087C06B7FC56B5033DB1B7B89185CE9C846E03D3"
+    },
+    {
+      "File": "Runtime\\WellnessPhotoAlbum.cs",
+      "SHA256": "6D3113288489540F5F29BCBAFB426D60952E1B9C1F83B7F050264F7584599150"
+    },
+    {
+      "File": "Editor\\TherapyPhotoCameraSetup.cs",
+      "SHA256": "2347A8945E6D55715A358B12C991598A8151AE84B161A12E5F6515429020C612"
+    }
+  ],
+  "Verification": "PASS: Unity import, scene references, PNG/JPEG/metadata save and reload, exact PNG colors, optical zoom and capture sizing. GPU/visual/input Play-mode check pending.",
+  "CopiedAt": "2026-09-30T03:48:28.2012516-04:00"
+}

@@ -1,0 +1,23 @@
+{
+  "Backup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\CompanionDoorYield\\20260930-013508",
+  "Files": [
+    {
+      "File": "Runtime\\WellnessDoor.cs",
+      "SHA256": "DEB2508F66D7460AC8D6487A76E36F9ECE9BA36123E00CC72B7C138DFC54A67E"
+    },
+    {
+      "File": "Runtime\\WellnessCompanionMovement.cs",
+      "SHA256": "6EF1E6F9FDAD8CA4F9DBD0AD3A6ADD29D059FBA3DD74CFAB84B6C4CCE022857A"
+    },
+    {
+      "File": "Editor\\TherapyDoorwayClearanceChecks.cs",
+      "SHA256": "E4DBF5856CCE9EE71830F8ED9DE24D00D2A7123B65376FEC9BCB593B5AE9E413"
+    },
+    {
+      "File": "DoorwayClearanceRequest.txt",
+      "SHA256": "1C34F88707B55E6104C4EB20E71FFA3D33E414B71EF689A15FAD0640D0AC58CB"
+    }
+  ],
+  "Verification": "PASS: headless Unity Edit-mode controller and navigation regressions; saved scene unchanged. Play-mode movement timing not tested.",
+  "CopiedAt": "2026-09-30T01:35:08.7485338-04:00"
+}

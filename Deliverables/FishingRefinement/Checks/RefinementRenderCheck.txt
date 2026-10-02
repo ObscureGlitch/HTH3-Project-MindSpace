@@ -1,0 +1,1 @@
+PASS: five actual Unity catch-animation keyframes and six previews using the runtime HUD draw list, actual font glyphs and spinning koi preview textures. Offscreen Edit-mode rendering, no Play mode or camera/microphone activation. Live mouse/controller feel and audio remain manual checks.

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "type": "CPU formula checks, not Unity rendering",
+  "finiteMoonSamples": 125612,
+  "interiorLinearContrast": 0.5153571270983587,
+  "projectedSizes": [
+    {
+      "height": 720,
+      "sunDiameter": 18.682413830173054,
+      "moonDiameter": 34.17132790435726,
+      "oldMoonDiameter": 9.073518964802615
+    },
+    {
+      "height": 768,
+      "sunDiameter": 19.927908085517924,
+      "moonDiameter": 36.44941643131441,
+      "oldMoonDiameter": 9.678420229122787
+    },
+    {
+      "height": 1080,
+      "sunDiameter": 28.023620745259585,
+      "moonDiameter": 51.25699185653589,
+      "oldMoonDiameter": 13.610278447203923
+    },
+    {
+      "height": 1440,
+      "sunDiameter": 37.36482766034611,
+      "moonDiameter": 68.34265580871453,
+      "oldMoonDiameter": 18.14703792960523
+    }
+  ],
+  "moonCraterCount": 6
+}

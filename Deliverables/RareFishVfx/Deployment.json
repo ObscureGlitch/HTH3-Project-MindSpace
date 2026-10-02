@@ -1,0 +1,49 @@
+{
+  "Status": "PASS",
+  "Project": "D:\\Unity\\HTH3 Project",
+  "Backup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\RareFishVfx\\20261001-143752",
+  "Effects": [
+    "Rare: Azure Wake - cyan arc and glints",
+    "Epic: Astral Current - violet/cyan ribbons and orbiting stars",
+    "Legendary: Solar Crown - golden sigil, crystal crown and rays",
+    "Godly: Celestial Sovereign - rose/cyan orbits, wings, crystal crown and starbursts"
+  ],
+  "Surfaces": [
+    "Catch lift and arrival reveal",
+    "Equipped fish",
+    "Transparent collection preview"
+  ],
+  "PerEffectRendererCount": 1,
+  "MaxEffectVertices": 3072,
+  "MeasuredGodlyVertices": 2860,
+  "GeometryUpdateHzCap": 30,
+  "GodlyCpuMillisecondsPerUpdate": 0.463,
+  "SteadyStateManagedAllocationBytes": 0,
+  "SceneUnchanged": true,
+  "RarityOddsUnchanged": true,
+  "SaveFormatUnchanged": true,
+  "Verification": "Runtime/editor compilation; full weighted-loot regression; legacy-save fixture compatibility; all rarity tiers; bounds/opacity/cadence/cleanup; 3000-update CPU microbenchmark; GPU collection/catch renders; transparent and unclipped collection framing; visual inspection passed. Live Play input and full-game FPS not benchmarked.",
+  "Files": [
+    {
+      "File": "Editor\\TherapyRareFishVfxChecks.cs",
+      "SHA256": "2832B0B2031894222AEBC75AA50AB2591AA205D538F10DB48050896CAB845F5F"
+    },
+    {
+      "File": "Resources\\KoiRarityAura.shader",
+      "SHA256": "2C74EA87349B3614C73D223E480DD9C49EECA8C7C92E3CDC26E2D24F232B2093"
+    },
+    {
+      "File": "Runtime\\KoiFishingViews.cs",
+      "SHA256": "BE5E67A2AD5510A8D1D29F593A3D3997362B6B62E7D54A4F4D8CB959CBF69A30"
+    },
+    {
+      "File": "Runtime\\KoiRarityVfx.cs",
+      "SHA256": "7C7BDB9D0668E65E3BE2312D5A32FFE3432BC12CA423E5DE6631C49B59AC2E80"
+    },
+    {
+      "File": "Runtime\\WellnessFishing.cs",
+      "SHA256": "BDD5FA7D47CFD9D165F2A6BEA132610B7B541C2DCC37C88CCC996FFB5BE8EB05"
+    }
+  ],
+  "VerifiedAt": "2026-10-01T14:44:03.2990903-04:00"
+}

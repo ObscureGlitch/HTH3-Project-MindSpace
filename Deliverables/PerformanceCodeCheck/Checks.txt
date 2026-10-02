@@ -1,0 +1,2 @@
+PASS: idle sleep, input guards, propagation, dry boundary, conservation, settling, wake-up and small-pond storm stability.
+Settled after 894 simulation steps; 100,000 sleeping steps: 1.342 ms (CPU microbenchmark, not gameplay FPS).

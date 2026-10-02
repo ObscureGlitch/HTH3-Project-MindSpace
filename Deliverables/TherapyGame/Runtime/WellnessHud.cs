@@ -45,6 +45,17 @@ namespace TheLastWatch.UI
         private WellnessUiTheme theme;
         private GUIStyle largeCaption;
         private GUIStyle pulseValue,pulseSmall,pulseHeart;
+        private readonly Dictionary<GUIStyle, FittedLabel> fittedLabels=new Dictionary<GUIStyle, FittedLabel>();
+        private readonly GUIContent measuredText=new GUIContent();
+        private string captionBody;
+        private GUIStyle captionStyle;
+        private float captionWidth,captionHeight;
+        private struct FittedLabel
+        {
+            public string source,result;
+            public float width;
+            public int fontSize;
+        }
         private readonly WellnessPulseTrace pulseTrace=new WellnessPulseTrace();
         public const float TheatreIdleDelay=5f;
         public WellnessUiTheme Theme=>theme??(theme=new WellnessUiTheme());
@@ -252,12 +263,23 @@ namespace TheLastWatch.UI
             string detail=usable?"BPM animation · not an ECG":provider==null?"Monitor unavailable":provider.StatusText;
             ui.HudLabel(new Rect(r.x,r.y+29,r.width,14),Fit(detail,pulseSmall,r.width),pulseSmall,.65f);
         }
-        private static string Fit(string value,GUIStyle style,float width)
+        private string Fit(string value,GUIStyle style,float width)
         {
-            if(style.CalcSize(new GUIContent(value)).x<=width)return value;
-            int length=value.Length;
-            while(length>1&&style.CalcSize(new GUIContent(value.Substring(0,length)+"…")).x>width)length--;
-            return value.Substring(0,length)+"…";
+            value=value??string.Empty;
+            if(fittedLabels.TryGetValue(style,out var cached)&&cached.source==value&&cached.width==width&&cached.fontSize==style.fontSize)
+                return cached.result;
+            measuredText.text=value;
+            string result=value;
+            if(style.CalcSize(measuredText).x>width)
+            {
+                // Measure only when the track/status or available width changes.
+                int length=value.Length;
+                do {length--;measuredText.text=value.Substring(0,Mathf.Max(0,length))+"…";}
+                while(length>0&&style.CalcSize(measuredText).x>width);
+                result=measuredText.text;
+            }
+            fittedLabels[style]=new FittedLabel {source=value,result=result,width=width,fontSize=style.fontSize};
+            return result;
         }
         private void DrawInteraction(Rect r,float width,float height)
         {
@@ -277,7 +299,14 @@ namespace TheLastWatch.UI
             if(largeCaption==null)largeCaption=new GUIStyle(ui.HudText){fontSize=21};
             GUIStyle style=largerCaptions?largeCaption:ui.HudText;
             Rect viewport=new Rect(r.x+14,r.y+34,r.width-28,r.height-65);
-            float textHeight=style.CalcHeight(new GUIContent(body),viewport.width-4);
+            float availableWidth=viewport.width-4;
+            if(captionBody!=body||captionStyle!=style||captionWidth!=availableWidth)
+            {
+                measuredText.text=body;
+                captionHeight=style.CalcHeight(measuredText,availableWidth);
+                captionBody=body;captionStyle=style;captionWidth=availableWidth;
+            }
+            float textHeight=captionHeight;
             captionTarget=Mathf.Max(0,textHeight-viewport.height);
             GUI.BeginGroup(viewport);
             // A short, continuous soft reveal, not simulated one-letter-per-frame transcription.

@@ -1,0 +1,6 @@
+PASS: click-to-fish and first-person cast verified.
+PASS: distinct wind-up, forward flick and follow-through; attached float before release, continuous arc and exact water landing; 30/60/120 Hz timing; fresh-click, focus, UI-lock, cursor, seating and other-activity guards. F fishing binding removed.
+PASS: hand, sleeve, rod, float, line and ripple are temporary; no colliders, shadows or extra camera; cancel hides visuals, disposal releases owned objects/meshes/materials.
+Controls: left click cast; Space hook/reel; I koi collection; Esc cancel/close.
+Existing catch saves were not accessed. Camera, microphone and AI sessions were not activated.
+Pending: manual Play input and UI check.

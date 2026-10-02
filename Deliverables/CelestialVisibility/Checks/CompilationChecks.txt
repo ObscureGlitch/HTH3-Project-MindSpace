@@ -1,0 +1,6 @@
+PASS: current Runtime C# with staged replacements compiled.
+PASS: current Editor C# with staged replacements compiled.
+PASS: exact shared sun/moon/sky/aurora/meteor/horizon HLSL compiles to DirectX 11 pixel-shader bytecode on CPU. Used by both sky and pond. No device or rendering context created.
+
+Full-pass legacy checker cannot preprocess current URP Common.hlsl zero-argument marker macros. Unmodified Unity headers were not changed. Exact modified shared HLSL compiled independently; Unity pass import must be checked in the editor.
+Offline CPU compilation only; final Unity import and visible rendering still need verification.

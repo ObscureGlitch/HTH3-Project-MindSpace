@@ -1,0 +1,22 @@
+[0:v]setpts=PTS-STARTPTS,fps=30,settb=1/30[v0];
+[1:v]setpts=PTS-STARTPTS,fps=30,settb=1/30[v1];
+[2:v]setpts=PTS-STARTPTS,fps=30,settb=1/30[v2];
+[3:v]setpts=PTS-STARTPTS,fps=30,settb=1/30[v3];
+[4:v]setpts=PTS-STARTPTS,fps=30,settb=1/30[v4];
+[5:v]setpts=PTS-STARTPTS,fps=30,settb=1/30[v5];
+[v0][v1]xfade=transition=fade:duration=0.3:offset=5,fps=30[x1];
+[x1][v2]xfade=transition=fade:duration=0.3:offset=10,fps=30[x2];
+[x2][v3]xfade=transition=fade:duration=0.3:offset=15,fps=30[x3];
+[x3][v4]xfade=transition=fade:duration=0.3:offset=18,fps=30[x4];
+[x4][v5]xfade=transition=fade:duration=0.3:offset=22,fps=30[x5];
+[x5][7:v]overlay=0:0:shortest=1[base];
+[base]drawtext=fontfile=review/font-bold.ttf:text='MindSpace':fontsize=52:fontcolor=0xF6F5EA:x=52:y=583:alpha='if(lt(t,0.3),0,if(lt(t,0.6),(t-0.3)/.3,if(lt(t,4.4),1,if(lt(t,4.7),(4.7-t)/.3,0))))'[t0];
+[t0]drawtext=fontfile=review/font.ttf:text='A little room to reconnect.':fontsize=25:fontcolor=0xF6F5EA:x=52:y=650:alpha='if(lt(t,0.3),0,if(lt(t,0.6),(t-0.3)/.3,if(lt(t,4.4),1,if(lt(t,4.7),(4.7-t)/.3,0))))'[t1];
+[t1]drawtext=fontfile=review/font.ttf:text='Find your space.':fontsize=36:fontcolor=0xF6F5EA:x=52:y=632:alpha='if(lt(t,5.4),0,if(lt(t,5.7),(t-5.4)/.3,if(lt(t,9.399999999999999),1,if(lt(t,9.7),(9.7-t)/.3,0))))'[t2];
+[t2]drawtext=fontfile=review/font.ttf:text='Talk with an AI companion.':fontsize=36:fontcolor=0xF6F5EA:x=52:y=632:alpha='if(lt(t,10.4),0,if(lt(t,10.700000000000001),(t-10.4)/.3,if(lt(t,14.399999999999999),1,if(lt(t,14.7),(14.7-t)/.3,0))))'[t3];
+[t3]drawtext=fontfile=review/font.ttf:text='Choose your companion.':fontsize=36:fontcolor=0xF6F5EA:x=52:y=632:alpha='if(lt(t,15.4),0,if(lt(t,15.700000000000001),(t-15.4)/.3,if(lt(t,17.5),1,if(lt(t,17.8),(17.8-t)/.3,0))))'[t4];
+[t4]drawtext=fontfile=review/font.ttf:text='Explore at your own pace.':fontsize=36:fontcolor=0xF6F5EA:x=52:y=632:alpha='if(lt(t,18.4),0,if(lt(t,18.7),(t-18.4)/.3,if(lt(t,21.5),1,if(lt(t,21.8),(21.8-t)/.3,0))))'[t5];
+[t5]drawtext=fontfile=review/font-bold.ttf:text='MindSpace':fontsize=52:fontcolor=0xF6F5EA:x=52:y=583:alpha='if(lt(t,23.5),0,if(lt(t,23.8),(t-23.5)/.3,if(lt(t,29.2),1,if(lt(t,29.5),(29.5-t)/.3,0))))'[t6];
+[t6]drawtext=fontfile=review/font.ttf:text='Take a moment for yourself.':fontsize=25:fontcolor=0xF6F5EA:x=52:y=650:alpha='if(lt(t,23.5),0,if(lt(t,23.8),(t-23.5)/.3,if(lt(t,29.2),1,if(lt(t,29.5),(29.5-t)/.3,0))))'[t7];
+[t7]fade=t=in:st=0:d=0.25,fade=t=out:st=29.5:d=0.5,format=yuv420p[outv];
+[6:a]atrim=duration=30,asetpts=PTS-STARTPTS,afade=t=in:d=0.7,afade=t=out:st=28.5:d=1.5,alimiter=limit=0.95[outa]

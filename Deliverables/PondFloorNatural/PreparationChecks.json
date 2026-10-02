@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "pieces": 88,
+  "uniqueGeometrySignatures": 88,
+  "types": {
+    "driftwood": 6,
+    "broadleaf-rosette": 9,
+    "ribbon-grass": 12,
+    "river-stone": 25,
+    "slate-fragment": 14,
+    "gravel-pocket": 12,
+    "fallen-leaf": 10
+  },
+  "triangles": 17092,
+  "renderersAfterCombining": 1,
+  "colliders": 0,
+  "checks": [
+    "Every vertex on authored bed and inside water",
+    "No south-entry decoration",
+    "All decoration under water",
+    "Low profile below fish routes",
+    "No duplicated local-geometry signatures",
+    "No regular ring or grid placement"
+  ]
+}

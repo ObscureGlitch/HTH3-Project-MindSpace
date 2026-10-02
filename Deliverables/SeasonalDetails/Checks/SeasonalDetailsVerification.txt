@@ -1,0 +1,8 @@
+PASS: saved seasonal scenery and runtime tests.
+Flowers: 540; ground leaves: 1080; renderers: 8; total triangles: 44748 (only one seasonal set draws at a time).
+Spring: Daylight 13.4h  ·  Sunrise 05:19  ·  Sunset 18:41
+Summer: Daylight 15.4h  ·  Sunrise 04:17  ·  Sunset 19:43
+Fall: Daylight 10.6h  ·  Sunrise 06:41  ·  Sunset 17:19
+Winter: Daylight 8.6h  ·  Sunrise 07:43  ·  Sunset 16:17
+PASS: nearby falling leaves emit, flutter and descend; 27 alive after 4 simulated seconds, cap 80; no particle collision or trails.
+PASS: all four seasonal visibility states; 8-second smooth daylight transition; sunrise/sunset horizon checks; midnight wrap; seasonal night effects; original visibility restored on disable.

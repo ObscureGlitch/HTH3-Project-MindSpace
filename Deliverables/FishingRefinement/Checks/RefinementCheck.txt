@@ -1,0 +1,8 @@
+PASS: nine existing snapshot catches load unchanged; completed tmp and pending journals survive a fresh loader and recover once; damaged tmp retained in backup; duplicate, equipped choice and in-memory read failure protections. Fixture files are confined to project Temp.
+PASS: all nine catches reachable on two explicitly counted pages; stale Godly filter resets to All fish; all six rarity filters preserve records; empty/filter dropdown/journal/long catch name layouts fit 1280×720; all UI surfaces opaque and active reeling HUD has only four labels.
+PASS: submerged start, fast 1.08m water exit, settled display endpoint, bounded arrival spring, disposable splash without lights/colliders.
+PASS: exhaustive baseline and focused weighted outcomes; 24 positive chances, Godly highest tier, Genesis rarest (0.05% baseline); free focus multiplies only selected weight by three, displayed normalized odds match.
+PASS: 216 high-rarity feedback-player wins across six movement styles at 30/60/120 Hz; clean/late/missed hooks, no-input escape, cancel, finite bounds and exactly-one claim.
+PASS: all sixteen new species persist, equipped Genesis and catch quality reload; old explicit Godly rarity and original save bytes untouched; journal/XP/bests rebuild without rewards on repeated opening; corrupt and duplicate records handled. Real saves were not opened.
+PASS: all 24 catches lift from water; 36 effect presentations sampled across reveal/held/collection, bounded at 1,024 quads and 30 Hz, one renderer per effect, no particle GameObjects/lights/colliders; full cleanup.
+No Play mode, real save writes, microphone or webcam were used.

@@ -1,0 +1,14 @@
+[
+  {
+    "File": "Weather\\Shaders\\WellnessMoon.hlsl",
+    "SHA256": "71BDDA6AF3799A66D4D285D56C3805B280D65410D0F62FA1FB7F083C2C3A1D5F"
+  },
+  {
+    "File": "Weather\\Shaders\\WellnessSkySampling.hlsl",
+    "SHA256": "58CAD2BFD715531E83ABAA19ACC0968EFD5780FC24C52E72751E72EAFEB9734E"
+  },
+  {
+    "File": "Editor\\TherapyNightSkyVarietyUpgrade.cs",
+    "SHA256": "D3810FCE0338AEA889A40426BC77F261FF53E0B38A54D5E7F253E5D8972C5E97"
+  }
+]

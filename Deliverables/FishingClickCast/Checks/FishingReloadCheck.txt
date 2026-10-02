@@ -1,0 +1,7 @@
+PASS: fresh Unity process reloaded saved fishing component and references.
+PASS: 90 seeded catch simulations at 30/60/120 Hz; bounded fish/bar/progress, missed bites, poor reeling, cancellation, one-time claim and invalid-time rejection.
+PASS: local catch save/reload, equip/change/put-away persistence, duplicate protection, safe GUID paths, corrupt-record tolerance and capacity protection. Real player saves were not opened or altered.
+PASS: 4 real-scene shoreline approaches and bridge casting, dry-deck/rock rejection, valid water landing, facing-away and remote-distance rejection.
+PASS: all 8 installed koi varieties reusable for catches and equip; original meshes/parts/materials retained, small size variation, no rod/float/held-fish colliders.
+PASS: saved scene has no active fishing state, held fish, rod, float or preview camera.
+Pending: live input, UI layout and Play-mode lifecycle.

@@ -1,0 +1,55 @@
+{
+  "sourceTriangles": 1269536,
+  "outputTriangles": 66936,
+  "varieties": [
+    {
+      "name": "kohaku",
+      "before": 158692,
+      "after": 8493,
+      "vertices": 6633
+    },
+    {
+      "name": "sanke",
+      "before": 158692,
+      "after": 8911,
+      "vertices": 6611
+    },
+    {
+      "name": "showa",
+      "before": 158692,
+      "after": 9224,
+      "vertices": 7979
+    },
+    {
+      "name": "tancho",
+      "before": 158692,
+      "after": 8069,
+      "vertices": 5297
+    },
+    {
+      "name": "ogon",
+      "before": 158692,
+      "after": 7913,
+      "vertices": 5102
+    },
+    {
+      "name": "asagi",
+      "before": 158692,
+      "after": 8495,
+      "vertices": 6423
+    },
+    {
+      "name": "benigoi",
+      "before": 158692,
+      "after": 7957,
+      "vertices": 5123
+    },
+    {
+      "name": "kigoi",
+      "before": 158692,
+      "after": 7874,
+      "vertices": 5902
+    }
+  ],
+  "sourceSha256": "3e0f0802eed95ad0cf635c004f309cdd0f0e8dcb56b7afd0c6e9f664d2527853"
+}

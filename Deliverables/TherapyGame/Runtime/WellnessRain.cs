@@ -5,7 +5,7 @@ using TheLastWatch.Player;
 namespace TheLastWatch.Integrations
 {
     // Adapted from Hackathon26's AmbientZone indoor/outdoor rain idea.
-    // Rain remains local to the player; no particle collision simulation or extra cameras.
+    // Local rain uses ray-tested landing times to disturb the pond surface.
     [DisallowMultipleComponent]
     public sealed class WellnessRain : MonoBehaviour
     {
@@ -16,6 +16,7 @@ namespace TheLastWatch.Integrations
         public bool rainEnabled = true;
         [Range(0, 1)] public float intensity = .55f;
         public bool VoiceDucking { get; set; }
+        [System.NonSerialized] public TheLastWatch.Environment.WellnessPondWater pond;
         private float weatherAmount = -1;
         public float EffectiveIntensity => rainEnabled ? Mathf.Clamp01(intensity) * (weatherAmount < 0 ? 1 : weatherAmount) : 0;
         public void SetWeatherAmount(float amount) => weatherAmount = Mathf.Clamp01(amount);
@@ -36,6 +37,13 @@ namespace TheLastWatch.Integrations
         {
             if (!Application.isPlaying) return;
             random = new System.Random(260926); mix = 0; emissionRemainder = 0;
+            foreach (var renderer in FindObjectsByType<MeshRenderer>())
+                if(renderer.gameObject.scene==gameObject.scene&&renderer.sharedMaterial!=null&&renderer.sharedMaterial.shader.name=="Therapy Game/Quiet Pond")
+                {
+                    pond=renderer.GetComponent<TheLastWatch.Environment.WellnessPondWater>();
+                    if(pond==null)pond=renderer.gameObject.AddComponent<TheLastWatch.Environment.WellnessPondWater>();
+                    pond.rain=this;break;
+                }
             if (drops != null) { drops.Clear(); drops.Play(); }
             if (rainAudio != null && rainAudio.clip != null) { rainAudio.volume = 0; rainAudio.Play(); }
         }
@@ -73,10 +81,13 @@ namespace TheLastWatch.Integrations
                 for (int j = 0; j < hitCount; j++)
                     if (!hits[j].transform.IsChildOf(player.transform) && hits[j].distance < nearest)
                     { nearest = hits[j].distance; floorY = hits[j].point.y; }
+                bool hitsPond=pond!=null&&pond.Contains(spawn)&&spawn.y>pond.WaterLevel&&floorY<pond.WaterLevel+.015f;
+                float lifetime=hitsPond?(spawn.y-pond.WaterLevel)/8.5f:DropLifetime(spawn.y,floorY);
+                if(hitsPond)pond.QueueDrop(spawn,lifetime,-Range(.32f,.65f));
                 var emit = new ParticleSystem.EmitParams
                 {
                     position = spawn, velocity = new Vector3(0,-8.5f,0),
-                    startLifetime = DropLifetime(spawn.y,floorY), startSize = Range(.012f,.022f),
+                    startLifetime = lifetime, startSize = Range(.012f,.022f),
                     startColor = new Color(.72f,.83f,.88f,.27f), applyShapeToPosition = false
                 };
                 drops.Emit(emit,1);

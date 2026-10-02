@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "SHA256": "5E25301AC5367FFEF81C2AB320965B97A3B85C9042336C2367A2BB677F7C27A1",
+      "File": "Editor\\TherapyFishingPolishChecks.cs"
+    },
+    {
+      "SHA256": "82795565F683775A02C7E538345710DE103922C9984B6BE2EA9CC7B67F198C65",
+      "File": "Runtime\\KoiCatchInventory.cs"
+    },
+    {
+      "SHA256": "ABC5B3C0EA61C240924894E05B8BD137BAD4FCA3CF4F929DBABB3791042068A2",
+      "File": "Runtime\\KoiFishingCastMotion.cs"
+    },
+    {
+      "SHA256": "FDD43BC12D732625842E1789BD6B22FBF4B622BDB089963DBCE03319828EB13E",
+      "File": "Runtime\\KoiFishingCatchMotion.cs"
+    },
+    {
+      "SHA256": "537E67E23FA4E0DC98C12BD24574ED9648A513589FE5B695AF0C957E15E9B644",
+      "File": "Runtime\\KoiFishingLoot.cs"
+    },
+    {
+      "SHA256": "C2C24A95CC525B89E5C76F1CF79595485F9A54EBF1AE249FFEA08E4683E9B7CD",
+      "File": "Runtime\\KoiFishingViews.cs"
+    },
+    {
+      "SHA256": "9A76B77CAEEFDB650A4EE9C44962DE0DC1CC7A836BE7E6BCA7A2B10C46CEF25F",
+      "File": "Runtime\\WellnessFishing.cs"
+    }
+  ],
+  "Unchanged": [
+    {
+      "SHA256": "E09728FF25D91A08F56FB2D46A3B040116705D66E6F892E7C596D5BBAFB0F909",
+      "File": "Scenes\\TherapyRoom.unity"
+    },
+    {
+      "SHA256": "CC22D5919403BF6B2CBCA05B8B56BDE648D7EA96919750CC83583C78B1F3E068",
+      "File": "Exterior\\KoiPond\\KoiLibrary.asset"
+    },
+    {
+      "SHA256": "DB41E2CBBDCFB6346408B807B3C0C71C39F79BA2339BE452F0ADCA0E123BAC17",
+      "File": "Runtime\\KoiFishingRound.cs"
+    },
+    {
+      "SHA256": "4FB7E3AE1EBF05090C4E05DA595C2737718AD8E9A194F20F720F03A9E302E9B2",
+      "File": "Runtime\\WellnessKoiPond.cs"
+    },
+    {
+      "SHA256": "F0AA9753F2B2D9132B83B21FAE7FA5E5D7E8A67ED2359EEBAB225C26928A9579",
+      "File": "Runtime\\WellnessPhotoCamera.cs"
+    },
+    {
+      "SHA256": "5AC11F74FC9935225B93DF7A33A5DEFE9BB554470D08B0F0916464018C0606B4",
+      "File": "Runtime\\WellnessVoiceChat.cs"
+    },
+    {
+      "SHA256": "EF86CBEBFD5C2064E232580843452A86B49E56DD0543FAF646BEEDD46E907E42",
+      "File": "Runtime\\WellnessExplorer.cs"
+    },
+    {
+      "SHA256": "FF97B4B23339DFA6861E2AC36AF5B07B93543894323E62F25FE61D7A0E204EA5",
+      "File": "Runtime\\WellnessMainMenu.cs"
+    }
+  ],
+  "Backup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\FishingPolish\\20261001-141500",
+  "Status": "Installed; Edit-mode checks and keyframe rendering passed",
+  "Pending": "Manual Play input and UI check"
+}

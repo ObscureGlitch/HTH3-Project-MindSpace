@@ -1,0 +1,7 @@
+PASS: runtime C# compiled; pond shader pass compiled.
+PASS: impulse propagation, damped settling, dry boundary, bounded heights and small-grid CFL stress.
+Peak displacement: 0.02600019 m; remote wave: 0.001620259 m; final/early energy: 7.458797E-09.
+Runtime appearance and reflection performance still require visual validation.
+PASS: authored mesh initialization, wet mask, two overlapping impacts, scene reflection render request and offscreen camera capture.
+Preview: D:/Hack the Hill/Deliverables/PondWaterValidation/PondPreview.png
+Final volume-conservation assertion also passed (300 repeated impacts). Static preview inspected: scene reflection rendered; bridge obscures test impact positions. Full Play-mode rain timing and performance remain unverified.

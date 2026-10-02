@@ -1,0 +1,99 @@
+{
+  "Payload": [
+    {
+      "File": "Editor\\TherapyPantheonChecks.cs",
+      "SHA256": "0950B2EDB7B21D2B2C34C3C88152F782F18076A0B6CB9AF85980BBE9AB91ED70"
+    },
+    {
+      "File": "Editor\\TherapyPantheonRenderChecks.cs",
+      "SHA256": "915C5D53374EE7230049E8FDCAF5103439998BE1C92911C3ABF463FC8C58D5DF"
+    },
+    {
+      "File": "Editor\\TherapyPantheonSetup.cs",
+      "SHA256": "B3B0CEEABD34D2CA0EC5D73174D96C27921DEAF9EC7B5075CC97F96D4ED0E8D9"
+    },
+    {
+      "File": "Editor\\PantheonSource\\Pantheon.bytes",
+      "SHA256": "66758B41297B4880C5CA2892A88B0D8EDF63CB99BA5018169FAAD6B529CA5556"
+    },
+    {
+      "File": "Resources\\KoiPantheonSurface.shader",
+      "SHA256": "37025FF9CD33343F552C5228231CD132FC2374AF3BA36A36734CF859AD06B8C9"
+    },
+    {
+      "File": "Runtime\\KoiCatchInventory.cs",
+      "SHA256": "57918B6F6B3BC5E9374ECAE051221DF2189735273302F0787750952BE0D2820B"
+    },
+    {
+      "File": "Runtime\\KoiFishingAudio.cs",
+      "SHA256": "AB647EE68AF6C2576D247AA3D05A6FA241A22469FCD91DBC36C65765A269C494"
+    },
+    {
+      "File": "Runtime\\KoiFishingCollection.cs",
+      "SHA256": "2C3F6122302B3524F2F6B4FFDA81D5A51459901611EE7E494B82165953391BFA"
+    },
+    {
+      "File": "Runtime\\KoiFishingLoot.cs",
+      "SHA256": "1A2267D29E5E3FB8F86A82A2ADD76FF35749E8A5F57299942EBD99B6587A7313"
+    },
+    {
+      "File": "Runtime\\KoiFishingRound.cs",
+      "SHA256": "43E349C26881C7AE725590947EB6917E0CFC90BBD4EC76931543DA9C1D30A803"
+    },
+    {
+      "File": "Runtime\\KoiFishingViews.cs",
+      "SHA256": "393FEEA62F92012A9BA7007AC1383DC939A3E6AB503B1FDEB9BE5C1B15E4F26E"
+    },
+    {
+      "File": "Runtime\\KoiPantheonMotion.cs",
+      "SHA256": "FD6988F34219EA082C342F3A953F17376F98893AF66CDCE1546A68505ED2C636"
+    },
+    {
+      "File": "Runtime\\KoiPondLibrary.cs",
+      "SHA256": "C5F758729DE42DAA33FD642D8127DC2EEC56BACEF1B1191EDCBDBC931720E317"
+    },
+    {
+      "File": "Runtime\\KoiRarityVfx.cs",
+      "SHA256": "F56432086D8BCE7D91C24959076E8F7EC9AB274E00D2E85FB4818643675C6FD3"
+    },
+    {
+      "File": "Runtime\\WellnessFishing.cs",
+      "SHA256": "AA30FBB4E89ADA2A5FA7777AE195A99A5D859FD5B0510F3C16069BBC30E6550D"
+    },
+    {
+      "File": "Runtime\\WellnessFishingHud.cs",
+      "SHA256": "8B6AB92EAE5A2A6FC8DDDDC488B0633489787FA4257ADCC261B8003042B27013"
+    }
+  ],
+  "Backup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\FishingPantheon\\20261001-193809",
+  "Protected": [
+    {
+      "File": "Scenes\\TherapyRoom.unity",
+      "SHA256": "E09728FF25D91A08F56FB2D46A3B040116705D66E6F892E7C596D5BBAFB0F909"
+    },
+    {
+      "File": "Exterior\\KoiPond\\KoiLibrary.asset",
+      "SHA256": "CC22D5919403BF6B2CBCA05B8B56BDE648D7EA96919750CC83583C78B1F3E068"
+    },
+    {
+      "File": "Runtime\\WellnessKoiPond.cs",
+      "SHA256": "4FB7E3AE1EBF05090C4E05DA595C2737718AD8E9A194F20F720F03A9E302E9B2"
+    },
+    {
+      "File": "Runtime\\WellnessPhotoCamera.cs",
+      "SHA256": "F0AA9753F2B2D9132B83B21FAE7FA5E5D7E8A67ED2359EEBAB225C26928A9579"
+    },
+    {
+      "File": "Runtime\\WellnessVoiceChat.cs",
+      "SHA256": "5AC11F74FC9935225B93DF7A33A5DEFE9BB554470D08B0F0916464018C0606B4"
+    },
+    {
+      "File": "Runtime\\WellnessExplorer.cs",
+      "SHA256": "EF86CBEBFD5C2064E232580843452A86B49E56DD0543FAF646BEEDD46E907E42"
+    },
+    {
+      "File": "Runtime\\WellnessMainMenu.cs",
+      "SHA256": "FF97B4B23339DFA6861E2AC36AF5B07B93543894323E62F25FE61D7A0E204EA5"
+    }
+  ]
+}

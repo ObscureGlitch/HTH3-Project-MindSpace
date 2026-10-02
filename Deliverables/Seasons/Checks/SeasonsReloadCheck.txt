@@ -1,0 +1,6 @@
+PASS: fresh Unity process loaded saved four-season scene.
+PASS: 4,004 bounded/continuous seasonal weather samples, loop seams, wetter Spring than Summer, snow labeling, real cycle timing/order, manual hold, eight-second transition and invalid-time rejection.
+PASS: actual scene palette capture/apply/restore: winter ground, bare branches, vegetation dormancy, insect suppression, every Spring/Fall surface color and full Summer recovery. Shared source assets never recolored.
+PASS: all palette, sky, rain, leaf, vegetation and branch references serialized correctly. Spring/automatic/24-minute defaults retained. No runtime material clones saved.
+PASS: 120 crown bounds; combined winter mesh 8400 vertices and 8400 triangles.
+Pending: visual/GPU/input checks in Play. Verification did not save or enter Play.

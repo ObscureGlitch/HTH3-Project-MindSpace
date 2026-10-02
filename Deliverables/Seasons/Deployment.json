@@ -1,0 +1,59 @@
+{
+  "Backup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\Seasons\\20260930-043542",
+  "Files": [
+    {
+      "File": "Runtime\\WellnessSkyCycle.cs",
+      "SHA256": "9046E53994B13CACC18419F88AF8BF775AA292E82A3BF953D8E1D3D5B2FF2311"
+    },
+    {
+      "File": "Runtime\\WellnessRain.cs",
+      "SHA256": "E1FB7C690518A7701A92A7BA25180D278EAD4C5E686D9A24D83B5B2EA08E1A95"
+    },
+    {
+      "File": "Runtime\\WellnessQuietGlassMenu.cs",
+      "SHA256": "6CBA39BD5F0B4A414C851829D5A5F1CC3B531B5F2DC3EFD55D08EC8DEBE1EB5A"
+    },
+    {
+      "File": "Runtime\\WellnessFireflies.cs",
+      "SHA256": "388BD15B952DF6C46AC918A1162A79144C2D789F957199953905933859665D9E"
+    },
+    {
+      "File": "Runtime\\WellnessSeasonCycle.cs",
+      "SHA256": "2143B7BBED8ED8F013A99E0EBC5DB592B090D5032AF9398EEB90752A98F101ED"
+    },
+    {
+      "File": "Editor\\TherapySeasonSetup.cs",
+      "SHA256": "BB895B4F3BACF22E5B8EE359AEFDE0651ED2A1AE4791E0AF25AD9B17DBC1939B"
+    },
+    {
+      "File": "Runtime\\WellnessHud.cs",
+      "SHA256": "8B89E4BC5BC962851815CC930ABFF59B73FAE914F86815814CBA5A6419989CF7"
+    },
+    {
+      "File": "Runtime\\WellnessVoiceChat.cs",
+      "SHA256": "BCB574C64AC8F6081B3FE662213884EEAA2AA03DE2F3E1C0A4EB7887FACCC80B"
+    },
+    {
+      "File": "Runtime\\WellnessUiTheme.cs",
+      "SHA256": "845E44D1087D63CA0B44E18DC04D2D68CA7C56D609F33EF547E2534AAE65F900"
+    },
+    {
+      "File": "Editor\\WinterTreeGeometry.cs",
+      "SHA256": "FD5FD108AA85C9D33AE370496B308F87487D4B404753CD7FABE7A1707971E736"
+    },
+    {
+      "File": "Editor\\WinterTreePreview.cs",
+      "SHA256": "6472EDEA8D9783FC79228B0EDB35769E3EE0C4CBD932239A0A65F5C5EEFEFDE6"
+    },
+    {
+      "File": "Editor\\WinterTrunkBatch.cs",
+      "SHA256": "BA2971FED045C8EAAE9E3E01F497A3D85118D94FE5C246E66F811E0048837E15"
+    }
+  ],
+  "Verification": "PASS: lower Winter scaffold branches, short exposed trunks, connected ground-rooted trees, exact evergreen-trunk preservation, saved-mesh reload, seasonal visibility restore, unchanged source trunks/colliders and only winterDormant scene references changed. Edit-mode GPU preview rendered and visually inspected. Interactive Play test pending.",
+  "CopiedAt": "2026-09-30T04:35:42.7202717-04:00",
+  "VerifiedAt": "2026-09-30T19:13:12.9711895-04:00",
+  "WinterBranchBackup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\WinterBranchAttachments\\20260930-154108",
+  "NaturalWinterAndSnowBackup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\NaturalWinterAndSnow\\20260930-162416",
+  "WinterTreeProportionsBackup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\WinterTreeProportions\\20260930-191050"
+}

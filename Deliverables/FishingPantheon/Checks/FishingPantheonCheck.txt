@@ -1,0 +1,8 @@
+PASS: 16 supplied fish added to separate 24-koi catch catalog; original eight mesh references and 15-30 ambient school retained.
+Detailed model triangles across all 16: 193311. Only displayed catches, held fish and one preview instantiate them.
+PASS: exhaustive baseline and focused weighted outcomes; 24 positive chances, Godly highest tier, Genesis rarest (0.05% baseline); free focus multiplies only selected weight by three, displayed normalized odds match.
+PASS: 216 high-rarity feedback-player wins across six movement styles at 30/60/120 Hz; clean/late/missed hooks, no-input escape, cancel, finite bounds and exactly-one claim.
+PASS: all sixteen new species persist, equipped Genesis and catch quality reload; old explicit Godly rarity and original save bytes untouched; journal/XP/bests rebuild without rewards on repeated opening; corrupt and duplicate records handled. Real saves were not opened.
+PASS: all 24 catches lift from water; 60 effect presentations sampled across reveal/held/collection, bounded at 1,024 quads and 30 Hz, one renderer per effect, no particle GameObjects/lights/colliders; full cleanup.
+No real player saves, webcam, microphone, network or AI services were accessed. No Play mode was entered.
+Pending: hands-on Play input, UI readability and sustained frame-rate measurement.

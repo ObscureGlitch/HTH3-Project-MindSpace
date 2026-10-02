@@ -1,0 +1,19 @@
+{
+  "Backup": "D:\\Unity\\HTH3 Project\\TherapyBackups\\CelestialVisibility\\20260929-203346",
+  "Files": [
+    {
+      "File": "Weather\\Shaders\\WellnessMoon.hlsl",
+      "SHA256": "9238101DC91E70F970EC3F5056128B02120E320825345413F8BD8170C3E0F218"
+    },
+    {
+      "File": "Weather\\Shaders\\WellnessSkySampling.hlsl",
+      "SHA256": "C3DE6B036E3D308BED056B724885A27CD041598472F5277ED56505C2ACBEA313"
+    },
+    {
+      "File": "Editor\\TherapyNightSkyVarietyUpgrade.cs",
+      "SHA256": "4D81BA32D62A61F583EA483B275E80D48CEF12DCFF21B74D9D4325A2C9C8B981"
+    }
+  ],
+  "Verification": "Pending Therapy Game > Verify Varied Night Sky",
+  "CopiedAt": "2026-09-29T20:33:47.0388387-04:00"
+}

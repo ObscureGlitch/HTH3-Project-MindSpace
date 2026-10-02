@@ -1,0 +1,1 @@
+PASS: runtime and editor scripts compiled. Unity doorway command and navmesh regressions pending on reopen.
